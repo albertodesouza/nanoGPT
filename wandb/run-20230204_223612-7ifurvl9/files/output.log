@@ -1,0 +1,104 @@
+step 0: train loss 11.0204, val loss 11.0147
+iter 0: loss 11.0053, time 15880.30ms
+iter 10: loss 10.4301, time 573.33ms
+iter 20: loss 9.7733, time 574.90ms
+iter 30: loss 9.5489, time 575.19ms
+iter 40: loss 9.5974, time 574.57ms
+iter 50: loss 8.8694, time 575.64ms
+iter 60: loss 9.0633, time 574.20ms
+iter 70: loss 8.6262, time 575.62ms
+iter 80: loss 8.8533, time 575.18ms
+iter 90: loss 8.5014, time 576.53ms
+iter 100: loss 7.8671, time 575.83ms
+iter 110: loss 8.0692, time 576.04ms
+iter 120: loss 7.9117, time 576.53ms
+iter 130: loss 8.0523, time 576.74ms
+iter 140: loss 7.7406, time 576.94ms
+iter 150: loss 8.0726, time 576.99ms
+iter 160: loss 7.3896, time 576.11ms
+iter 170: loss 7.1401, time 577.28ms
+iter 180: loss 7.2696, time 578.69ms
+iter 190: loss 7.2492, time 577.69ms
+iter 200: loss 6.9599, time 578.14ms
+iter 210: loss 7.4793, time 577.72ms
+iter 220: loss 7.2001, time 578.15ms
+iter 230: loss 6.6447, time 578.56ms
+iter 240: loss 6.4522, time 579.23ms
+iter 250: loss 7.0449, time 578.58ms
+iter 260: loss 6.7721, time 578.27ms
+iter 270: loss 6.1019, time 579.74ms
+iter 280: loss 7.1384, time 579.82ms
+iter 290: loss 6.8781, time 579.48ms
+iter 300: loss 7.0331, time 579.93ms
+iter 310: loss 6.9969, time 579.87ms
+iter 320: loss 6.9681, time 580.06ms
+iter 330: loss 6.1040, time 579.35ms
+iter 340: loss 6.5682, time 580.28ms
+iter 350: loss 6.5983, time 579.80ms
+iter 360: loss 6.7817, time 579.67ms
+iter 370: loss 6.3783, time 579.59ms
+iter 380: loss 6.7569, time 580.14ms
+iter 390: loss 6.2394, time 579.99ms
+iter 400: loss 6.1977, time 580.59ms
+iter 410: loss 6.4181, time 579.36ms
+iter 420: loss 5.8987, time 579.58ms
+iter 430: loss 6.1115, time 579.46ms
+iter 440: loss 6.4984, time 579.29ms
+iter 450: loss 6.1578, time 580.13ms
+iter 460: loss 6.6569, time 579.73ms
+iter 470: loss 6.7085, time 579.52ms
+iter 480: loss 6.6837, time 579.61ms
+iter 490: loss 5.9163, time 579.41ms
+iter 500: loss 6.6381, time 579.66ms
+iter 510: loss 6.3512, time 579.80ms
+iter 520: loss 6.6505, time 580.05ms
+iter 530: loss 5.5997, time 579.65ms
+iter 540: loss 6.3405, time 580.52ms
+iter 550: loss 5.8697, time 579.49ms
+iter 560: loss 6.6528, time 579.87ms
+iter 570: loss 6.4974, time 579.53ms
+iter 580: loss 6.7529, time 579.96ms
+iter 590: loss 5.7953, time 580.40ms
+iter 600: loss 7.4846, time 579.95ms
+iter 610: loss 6.5367, time 580.80ms
+iter 620: loss 5.8439, time 580.15ms
+iter 630: loss 6.2185, time 580.36ms
+iter 640: loss 7.0411, time 579.68ms
+iter 650: loss 7.0998, time 579.34ms
+iter 660: loss 6.4919, time 580.34ms
+iter 670: loss 6.4519, time 580.17ms
+iter 680: loss 6.2737, time 579.98ms
+iter 690: loss 6.4024, time 579.25ms
+iter 700: loss 5.6947, time 581.30ms
+iter 710: loss 6.2540, time 580.23ms
+iter 720: loss 6.1489, time 578.89ms
+iter 730: loss 6.1802, time 578.38ms
+iter 740: loss 6.1332, time 579.70ms
+iter 750: loss 5.8714, time 581.09ms
+iter 760: loss 5.8625, time 580.40ms
+iter 770: loss 6.4660, time 581.04ms
+iter 780: loss 6.2293, time 582.08ms
+iter 790: loss 5.7580, time 581.67ms
+iter 800: loss 6.1734, time 580.65ms
+iter 810: loss 6.3405, time 579.98ms
+iter 820: loss 5.9908, time 579.83ms
+iter 830: loss 6.4243, time 580.52ms
+iter 840: loss 6.1851, time 581.88ms
+iter 850: loss 6.4066, time 580.57ms
+iter 860: loss 6.1342, time 580.62ms
+Traceback (most recent call last):
+  File "train.py", line 285, in <module>
+    scaler.scale(loss).backward()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "train.py", line 285, in <module>
+    scaler.scale(loss).backward()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

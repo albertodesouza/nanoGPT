@@ -1,0 +1,39 @@
+/home/lume/.local/lib/python3.8/site-packages/torch/nn/utils/stateless.py:44: UserWarning: functional_call was passed multiple values for tied weights. This behavior is deprecated and will be an error in future versions
+  warnings.warn("functional_call was passed multiple values for tied weights. "
+/home/lume/.local/lib/python3.8/site-packages/torch/nn/utils/stateless.py:44: UserWarning: functional_call was passed multiple values for tied weights. This behavior is deprecated and will be an error in future versions
+  warnings.warn("functional_call was passed multiple values for tied weights. "
+step 0: train loss 11.0203, val loss 11.0147
+/home/lume/.local/lib/python3.8/site-packages/torch/nn/utils/stateless.py:44: UserWarning: functional_call was passed multiple values for tied weights. This behavior is deprecated and will be an error in future versions
+  warnings.warn("functional_call was passed multiple values for tied weights. "
+/home/lume/.local/lib/python3.8/site-packages/torch/nn/utils/stateless.py:44: UserWarning: functional_call was passed multiple values for tied weights. This behavior is deprecated and will be an error in future versions
+  warnings.warn("functional_call was passed multiple values for tied weights. "
+/home/lume/.local/lib/python3.8/site-packages/torch/nn/utils/stateless.py:44: UserWarning: functional_call was passed multiple values for tied weights. This behavior is deprecated and will be an error in future versions
+  warnings.warn("functional_call was passed multiple values for tied weights. "
+[2023-02-04 23:52:33,531] torch._inductor.optimize_indexing: [WARNING] unhandled ValueRange op name
+iter 0: loss 11.0053, time 38893.28ms
+iter 10: loss 10.4292, time 426.86ms
+iter 20: loss 9.7746, time 427.29ms
+iter 30: loss 9.5494, time 428.19ms
+iter 40: loss 9.5968, time 426.29ms
+iter 50: loss 8.8697, time 427.49ms
+iter 60: loss 9.0641, time 428.63ms
+iter 70: loss 8.6257, time 429.30ms
+iter 80: loss 8.8529, time 428.49ms
+iter 90: loss 8.5015, time 429.02ms
+iter 100: loss 7.8672, time 430.65ms
+Traceback (most recent call last):
+  File "train.py", line 285, in <module>
+    scaler.scale(loss).backward()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "train.py", line 285, in <module>
+    scaler.scale(loss).backward()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

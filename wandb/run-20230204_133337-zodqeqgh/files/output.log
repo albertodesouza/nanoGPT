@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "train.py", line 245, in <module>
+    losses = estimate_loss()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "train.py", line 206, in estimate_loss
+    losses[k] = loss.item()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "train.py", line 245, in <module>
+    losses = estimate_loss()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "train.py", line 206, in estimate_loss
+    losses[k] = loss.item()
+KeyboardInterrupt

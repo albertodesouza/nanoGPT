@@ -1,0 +1,4 @@
+2023-02-05 05:29:17 ERROR dropped chunk HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/lcad/owt/hdh8onex/file_stream (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa8989cec10>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+NoneType: None
+2023-02-05 07:43:17 ERROR dropped chunk HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/lcad/owt/hdh8onex/file_stream (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa8988cf760>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+NoneType: None

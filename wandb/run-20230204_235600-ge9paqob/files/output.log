@@ -1,0 +1,54 @@
+step 0: train loss 11.0204, val loss 11.0147
+iter 0: loss 11.0045, time 18695.64ms
+iter 10: loss 10.4300, time 628.52ms
+iter 20: loss 9.7734, time 629.42ms
+iter 30: loss 9.5493, time 629.57ms
+iter 40: loss 9.5975, time 629.80ms
+iter 50: loss 8.8697, time 629.54ms
+iter 60: loss 9.0633, time 631.03ms
+iter 70: loss 8.6264, time 631.19ms
+iter 80: loss 8.8527, time 631.68ms
+iter 90: loss 8.5016, time 631.44ms
+iter 100: loss 7.8673, time 631.07ms
+iter 110: loss 8.0692, time 631.62ms
+iter 120: loss 7.9117, time 631.60ms
+Traceback (most recent call last):
+  File "train.py", line 281, in <module>
+    logits, loss = model(X, Y)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1482, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 181, in forward
+    x = block(x)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1482, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 112, in forward
+    x = x + self.mlp(self.ln_2(x))
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1482, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 97, in forward
+    x = self.c_proj(x)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1482, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "train.py", line 281, in <module>
+    logits, loss = model(X, Y)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1482, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 181, in forward
+    x = block(x)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1482, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 112, in forward
+    x = x + self.mlp(self.ln_2(x))
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1482, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 97, in forward
+    x = self.c_proj(x)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1482, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt

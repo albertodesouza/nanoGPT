@@ -1,0 +1,255 @@
+2023-02-04 20:00:07,411 INFO    StreamThr :85503 [internal.py:wandb_internal():87] W&B internal server running at pid: 85503, started at: 2023-02-04 20:00:07.411567
+2023-02-04 20:00:07,412 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: status
+2023-02-04 20:00:07,413 INFO    WriterThread:85503 [datastore.py:open_for_write():85] open: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/run-3g06t1pi.wandb
+2023-02-04 20:00:07,414 DEBUG   SenderThread:85503 [sender.py:send():334] send: header
+2023-02-04 20:00:07,445 DEBUG   SenderThread:85503 [sender.py:send():334] send: run
+2023-02-04 20:00:07,857 INFO    SenderThread:85503 [dir_watcher.py:__init__():216] watching files in: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files
+2023-02-04 20:00:07,857 INFO    SenderThread:85503 [sender.py:_start_run_threads():1065] run started: 3g06t1pi with start time 1675551607.411073
+2023-02-04 20:00:07,857 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: summary_record
+2023-02-04 20:00:07,857 INFO    SenderThread:85503 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-04 20:00:07,858 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: check_version
+2023-02-04 20:00:07,859 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: check_version
+2023-02-04 20:00:07,942 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: run_start
+2023-02-04 20:00:07,947 DEBUG   HandlerThread:85503 [system_info.py:__init__():31] System info init
+2023-02-04 20:00:07,947 DEBUG   HandlerThread:85503 [system_info.py:__init__():46] System info init done
+2023-02-04 20:00:07,947 INFO    HandlerThread:85503 [system_monitor.py:start():151] Starting system monitor
+2023-02-04 20:00:07,947 INFO    SystemMonitor:85503 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-02-04 20:00:07,947 INFO    HandlerThread:85503 [system_monitor.py:probe():172] Collecting system info
+2023-02-04 20:00:07,947 INFO    SystemMonitor:85503 [interfaces.py:start():168] Started cpu
+2023-02-04 20:00:07,947 INFO    SystemMonitor:85503 [interfaces.py:start():168] Started disk
+2023-02-04 20:00:07,947 INFO    SystemMonitor:85503 [interfaces.py:start():168] Started gpu
+2023-02-04 20:00:07,948 INFO    SystemMonitor:85503 [interfaces.py:start():168] Started memory
+2023-02-04 20:00:07,948 INFO    SystemMonitor:85503 [interfaces.py:start():168] Started network
+2023-02-04 20:00:07,954 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:07,989 DEBUG   HandlerThread:85503 [system_info.py:probe():195] Probing system
+2023-02-04 20:00:07,994 DEBUG   HandlerThread:85503 [system_info.py:_probe_git():180] Probing git
+2023-02-04 20:00:08,003 DEBUG   HandlerThread:85503 [system_info.py:_probe_git():188] Probing git done
+2023-02-04 20:00:08,003 DEBUG   HandlerThread:85503 [system_info.py:probe():241] Probing system done
+2023-02-04 20:00:08,003 DEBUG   HandlerThread:85503 [system_monitor.py:probe():181] {'os': 'Linux-5.15.0-46-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2023-02-04T23:00:07.989849', 'startedAt': '2023-02-04T23:00:07.404618', 'docker': None, 'cuda': None, 'args': ('config/train_alberto_gpt2.py', '--compile=False'), 'state': 'running', 'program': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/karpathy/nanoGPT.git', 'commit': '3fd4c0c5efb653a9e22d88803e13c51832e37a46'}, 'email': 'alberto@lcad.inf.ufes.br', 'root': '/home/lume/KARPATHY/nanoGPT', 'host': 'lume-h4', 'username': 'lume', 'executable': '/usr/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2280.224375, 'min': 800.0, 'max': 4600.0}, 'cpu_freq_per_core': [{'current': 4011.242, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 3475.517, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}], 'disk': {'total': 1344.4707374572754, 'used': 728.3481407165527}, 'gpu': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'memory_total': 6442450944}], 'memory': {'total': 15.407585144042969}}
+2023-02-04 20:00:08,003 INFO    HandlerThread:85503 [system_monitor.py:probe():182] Finished collecting system info
+2023-02-04 20:00:08,003 INFO    HandlerThread:85503 [system_monitor.py:probe():185] Publishing system info
+2023-02-04 20:00:08,003 DEBUG   HandlerThread:85503 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-02-04 20:00:08,003 DEBUG   HandlerThread:85503 [system_info.py:_save_pip():67] Saving pip packages done
+2023-02-04 20:00:08,004 INFO    HandlerThread:85503 [system_monitor.py:probe():187] Finished publishing system info
+2023-02-04 20:00:08,005 DEBUG   SenderThread:85503 [sender.py:send():334] send: files
+2023-02-04 20:00:08,005 INFO    SenderThread:85503 [sender.py:_save_file():1319] saving file wandb-metadata.json with policy now
+2023-02-04 20:00:08,009 DEBUG   SenderThread:85503 [sender.py:send():334] send: telemetry
+2023-02-04 20:00:08,009 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: stop_status
+2023-02-04 20:00:08,009 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: stop_status
+2023-02-04 20:00:08,639 INFO    Thread-16 :85503 [upload_job.py:push():143] Uploaded file /tmp/tmptpbgxg_dwandb/2ihpjxae-wandb-metadata.json
+2023-02-04 20:00:08,858 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_created():275] file/dir created: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/wandb-summary.json
+2023-02-04 20:00:08,858 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_created():275] file/dir created: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/requirements.txt
+2023-02-04 20:00:08,858 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_created():275] file/dir created: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/wandb-metadata.json
+2023-02-04 20:00:09,955 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:11,956 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:13,195 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: status_report
+2023-02-04 20:00:13,958 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:15,960 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:17,962 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:18,196 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: status_report
+2023-02-04 20:00:19,964 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:21,965 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:22,847 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-04 20:00:22,848 DEBUG   SenderThread:85503 [sender.py:send():334] send: history
+2023-02-04 20:00:22,848 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: summary_record
+2023-02-04 20:00:22,849 INFO    SenderThread:85503 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-04 20:00:22,860 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/wandb-summary.json
+2023-02-04 20:00:22,860 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_created():275] file/dir created: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/output.log
+2023-02-04 20:00:23,008 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-04 20:00:23,008 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-04 20:00:23,448 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: status_report
+2023-02-04 20:00:23,966 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:24,861 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/output.log
+2023-02-04 20:00:25,968 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:27,969 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:28,070 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-04 20:00:28,449 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: status_report
+2023-02-04 20:00:29,971 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:30,862 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/output.log
+2023-02-04 20:00:31,973 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:33,136 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-04 20:00:33,976 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:34,211 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: status_report
+2023-02-04 20:00:35,977 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:36,863 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/output.log
+2023-02-04 20:00:38,005 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:38,170 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-04 20:00:39,975 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: status_report
+2023-02-04 20:00:40,007 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:40,864 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/config.yaml
+2023-02-04 20:00:42,010 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:43,210 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-04 20:00:43,865 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/output.log
+2023-02-04 20:00:44,012 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:45,741 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: status_report
+2023-02-04 20:00:46,014 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:48,016 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:48,253 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-04 20:00:49,867 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/output.log
+2023-02-04 20:00:50,018 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:51,515 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: status_report
+2023-02-04 20:00:52,019 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:53,341 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-04 20:00:53,868 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/output.log
+2023-02-04 20:00:54,021 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:56,023 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:57,294 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: status_report
+2023-02-04 20:00:58,025 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:00:58,389 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-04 20:00:59,869 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/output.log
+2023-02-04 20:01:00,028 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:01:02,030 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:01:03,076 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: status_report
+2023-02-04 20:01:03,437 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-04 20:01:04,032 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:01:05,871 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/output.log
+2023-02-04 20:01:06,034 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:01:07,948 DEBUG   SystemMonitor:85503 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-02-04 20:01:07,949 DEBUG   SenderThread:85503 [sender.py:send():334] send: stats
+2023-02-04 20:01:08,063 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:01:08,490 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-04 20:01:08,950 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: status_report
+2023-02-04 20:01:10,066 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:01:11,872 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/output.log
+2023-02-04 20:01:12,069 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:01:13,613 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-04 20:01:14,071 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:01:14,660 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: status_report
+2023-02-04 20:01:16,074 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:01:17,874 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/output.log
+2023-02-04 20:01:18,076 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:01:18,670 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-04 20:01:20,079 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:01:20,460 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: status_report
+2023-02-04 20:01:22,082 ERROR   gpu       :85503 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 20:01:23,371 DEBUG   SenderThread:85503 [sender.py:send():334] send: exit
+2023-02-04 20:01:23,371 INFO    SenderThread:85503 [sender.py:send_exit():557] handling exit code: 255
+2023-02-04 20:01:23,371 INFO    SenderThread:85503 [sender.py:send_exit():559] handling runtime: 75
+2023-02-04 20:01:23,372 INFO    SenderThread:85503 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-04 20:01:23,372 INFO    SenderThread:85503 [sender.py:send_exit():565] send defer
+2023-02-04 20:01:23,372 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 20:01:23,372 INFO    HandlerThread:85503 [handler.py:handle_request_defer():170] handle defer: 0
+2023-02-04 20:01:23,372 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: defer
+2023-02-04 20:01:23,372 INFO    SenderThread:85503 [sender.py:send_request_defer():581] handle sender defer: 0
+2023-02-04 20:01:23,372 INFO    SenderThread:85503 [sender.py:transition_state():585] send defer: 1
+2023-02-04 20:01:23,372 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 20:01:23,372 INFO    HandlerThread:85503 [handler.py:handle_request_defer():170] handle defer: 1
+2023-02-04 20:01:23,372 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: defer
+2023-02-04 20:01:23,373 INFO    SenderThread:85503 [sender.py:send_request_defer():581] handle sender defer: 1
+2023-02-04 20:01:23,373 INFO    SenderThread:85503 [sender.py:transition_state():585] send defer: 2
+2023-02-04 20:01:23,373 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 20:01:23,373 INFO    HandlerThread:85503 [handler.py:handle_request_defer():170] handle defer: 2
+2023-02-04 20:01:23,373 INFO    HandlerThread:85503 [system_monitor.py:finish():161] Stopping system monitor
+2023-02-04 20:01:23,373 INFO    HandlerThread:85503 [interfaces.py:finish():175] Joined cpu
+2023-02-04 20:01:23,373 DEBUG   SystemMonitor:85503 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-02-04 20:01:23,373 DEBUG   SystemMonitor:85503 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-02-04 20:01:23,374 INFO    HandlerThread:85503 [interfaces.py:finish():175] Joined disk
+2023-02-04 20:01:23,402 INFO    HandlerThread:85503 [interfaces.py:finish():175] Joined gpu
+2023-02-04 20:01:23,402 INFO    HandlerThread:85503 [interfaces.py:finish():175] Joined memory
+2023-02-04 20:01:23,402 INFO    HandlerThread:85503 [interfaces.py:finish():175] Joined network
+2023-02-04 20:01:23,402 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: defer
+2023-02-04 20:01:23,402 INFO    SenderThread:85503 [sender.py:send_request_defer():581] handle sender defer: 2
+2023-02-04 20:01:23,402 INFO    SenderThread:85503 [sender.py:transition_state():585] send defer: 3
+2023-02-04 20:01:23,402 DEBUG   SenderThread:85503 [sender.py:send():334] send: stats
+2023-02-04 20:01:23,402 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 20:01:23,402 INFO    HandlerThread:85503 [handler.py:handle_request_defer():170] handle defer: 3
+2023-02-04 20:01:23,403 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: defer
+2023-02-04 20:01:23,403 INFO    SenderThread:85503 [sender.py:send_request_defer():581] handle sender defer: 3
+2023-02-04 20:01:23,403 INFO    SenderThread:85503 [sender.py:transition_state():585] send defer: 4
+2023-02-04 20:01:23,403 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 20:01:23,403 INFO    HandlerThread:85503 [handler.py:handle_request_defer():170] handle defer: 4
+2023-02-04 20:01:23,403 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: defer
+2023-02-04 20:01:23,403 INFO    SenderThread:85503 [sender.py:send_request_defer():581] handle sender defer: 4
+2023-02-04 20:01:23,403 INFO    SenderThread:85503 [sender.py:transition_state():585] send defer: 5
+2023-02-04 20:01:23,403 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 20:01:23,403 INFO    HandlerThread:85503 [handler.py:handle_request_defer():170] handle defer: 5
+2023-02-04 20:01:23,403 DEBUG   SenderThread:85503 [sender.py:send():334] send: summary
+2023-02-04 20:01:23,403 INFO    SenderThread:85503 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-04 20:01:23,403 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: defer
+2023-02-04 20:01:23,403 INFO    SenderThread:85503 [sender.py:send_request_defer():581] handle sender defer: 5
+2023-02-04 20:01:23,403 INFO    SenderThread:85503 [sender.py:transition_state():585] send defer: 6
+2023-02-04 20:01:23,403 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 20:01:23,404 INFO    HandlerThread:85503 [handler.py:handle_request_defer():170] handle defer: 6
+2023-02-04 20:01:23,404 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: defer
+2023-02-04 20:01:23,404 INFO    SenderThread:85503 [sender.py:send_request_defer():581] handle sender defer: 6
+2023-02-04 20:01:23,404 INFO    SenderThread:85503 [sender.py:transition_state():585] send defer: 7
+2023-02-04 20:01:23,404 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: status_report
+2023-02-04 20:01:23,404 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 20:01:23,404 INFO    HandlerThread:85503 [handler.py:handle_request_defer():170] handle defer: 7
+2023-02-04 20:01:23,404 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: defer
+2023-02-04 20:01:23,404 INFO    SenderThread:85503 [sender.py:send_request_defer():581] handle sender defer: 7
+2023-02-04 20:01:23,875 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/wandb-summary.json
+2023-02-04 20:01:23,875 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/output.log
+2023-02-04 20:01:24,372 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-04 20:01:25,374 INFO    SenderThread:85503 [sender.py:transition_state():585] send defer: 8
+2023-02-04 20:01:25,374 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: poll_exit
+2023-02-04 20:01:25,374 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 20:01:25,374 INFO    HandlerThread:85503 [handler.py:handle_request_defer():170] handle defer: 8
+2023-02-04 20:01:25,374 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: defer
+2023-02-04 20:01:25,374 INFO    SenderThread:85503 [sender.py:send_request_defer():581] handle sender defer: 8
+2023-02-04 20:01:25,377 INFO    SenderThread:85503 [sender.py:transition_state():585] send defer: 9
+2023-02-04 20:01:25,378 DEBUG   SenderThread:85503 [sender.py:send():334] send: artifact
+2023-02-04 20:01:25,378 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 20:01:25,379 INFO    HandlerThread:85503 [handler.py:handle_request_defer():170] handle defer: 9
+2023-02-04 20:01:25,875 INFO    Thread-13 :85503 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/output.log
+2023-02-04 20:01:26,564 INFO    Thread-18 :85503 [upload_job.py:push():98] Skipped uploading /home/lume/.local/share/wandb/artifacts/staging/tmpat14vubg
+2023-02-04 20:01:26,934 INFO    Thread-19 :85503 [upload_job.py:push():101] Uploaded file /home/lume/.local/share/wandb/artifacts/staging/tmp9h2mdaa2
+2023-02-04 20:01:28,274 INFO    SenderThread:85503 [sender.py:send_artifact():1415] sent artifact job-https___github.com_karpathy_nanoGPT.git_train.py - {'id': 'QXJ0aWZhY3Q6MzU0Nzc3MjUx', 'digest': 'ff641f0747a672af54eacf70990621dd', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjUxMjk1MDc2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MzU0Nzc1MzU0', 'versionIndex': 3}}, 'version': 'latest'}
+2023-02-04 20:01:28,274 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: defer
+2023-02-04 20:01:28,274 INFO    SenderThread:85503 [sender.py:send_request_defer():581] handle sender defer: 9
+2023-02-04 20:01:28,274 INFO    SenderThread:85503 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-02-04 20:01:28,876 INFO    SenderThread:85503 [dir_watcher.py:finish():392] scan: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files
+2023-02-04 20:01:28,876 INFO    SenderThread:85503 [dir_watcher.py:finish():406] scan save: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/requirements.txt requirements.txt
+2023-02-04 20:01:28,876 INFO    SenderThread:85503 [dir_watcher.py:finish():406] scan save: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/wandb-metadata.json wandb-metadata.json
+2023-02-04 20:01:28,876 INFO    SenderThread:85503 [dir_watcher.py:finish():406] scan save: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/wandb-summary.json wandb-summary.json
+2023-02-04 20:01:28,877 INFO    SenderThread:85503 [dir_watcher.py:finish():406] scan save: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/output.log output.log
+2023-02-04 20:01:28,877 INFO    SenderThread:85503 [dir_watcher.py:finish():406] scan save: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/config.yaml config.yaml
+2023-02-04 20:01:28,877 INFO    SenderThread:85503 [sender.py:transition_state():585] send defer: 10
+2023-02-04 20:01:28,877 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 20:01:28,877 INFO    HandlerThread:85503 [handler.py:handle_request_defer():170] handle defer: 10
+2023-02-04 20:01:28,881 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: defer
+2023-02-04 20:01:28,884 INFO    SenderThread:85503 [sender.py:send_request_defer():581] handle sender defer: 10
+2023-02-04 20:01:28,884 INFO    SenderThread:85503 [file_pusher.py:finish():160] shutting down file pusher
+2023-02-04 20:01:29,373 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-04 20:01:29,495 INFO    Thread-22 :85503 [upload_job.py:push():143] Uploaded file /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/output.log
+2023-02-04 20:01:29,529 INFO    Thread-21 :85503 [upload_job.py:push():143] Uploaded file /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/wandb-summary.json
+2023-02-04 20:01:29,531 INFO    Thread-20 :85503 [upload_job.py:push():143] Uploaded file /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/requirements.txt
+2023-02-04 20:01:29,770 INFO    Thread-23 :85503 [upload_job.py:push():143] Uploaded file /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/files/config.yaml
+2023-02-04 20:01:29,971 INFO    Thread-12 :85503 [sender.py:transition_state():585] send defer: 11
+2023-02-04 20:01:29,971 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 20:01:29,971 INFO    HandlerThread:85503 [handler.py:handle_request_defer():170] handle defer: 11
+2023-02-04 20:01:29,971 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: defer
+2023-02-04 20:01:29,971 INFO    SenderThread:85503 [sender.py:send_request_defer():581] handle sender defer: 11
+2023-02-04 20:01:29,971 INFO    SenderThread:85503 [file_pusher.py:join():165] waiting for file pusher
+2023-02-04 20:01:29,971 INFO    SenderThread:85503 [sender.py:transition_state():585] send defer: 12
+2023-02-04 20:01:29,972 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 20:01:29,972 INFO    HandlerThread:85503 [handler.py:handle_request_defer():170] handle defer: 12
+2023-02-04 20:01:29,972 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: defer
+2023-02-04 20:01:29,972 INFO    SenderThread:85503 [sender.py:send_request_defer():581] handle sender defer: 12
+2023-02-04 20:01:30,145 INFO    SenderThread:85503 [sender.py:transition_state():585] send defer: 13
+2023-02-04 20:01:30,145 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 20:01:30,145 INFO    HandlerThread:85503 [handler.py:handle_request_defer():170] handle defer: 13
+2023-02-04 20:01:30,146 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: defer
+2023-02-04 20:01:30,146 INFO    SenderThread:85503 [sender.py:send_request_defer():581] handle sender defer: 13
+2023-02-04 20:01:30,146 INFO    SenderThread:85503 [sender.py:transition_state():585] send defer: 14
+2023-02-04 20:01:30,146 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 20:01:30,146 DEBUG   SenderThread:85503 [sender.py:send():334] send: final
+2023-02-04 20:01:30,146 INFO    HandlerThread:85503 [handler.py:handle_request_defer():170] handle defer: 14
+2023-02-04 20:01:30,146 DEBUG   SenderThread:85503 [sender.py:send():334] send: footer
+2023-02-04 20:01:30,146 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: defer
+2023-02-04 20:01:30,146 INFO    SenderThread:85503 [sender.py:send_request_defer():581] handle sender defer: 14
+2023-02-04 20:01:30,146 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-04 20:01:30,147 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: poll_exit
+2023-02-04 20:01:30,147 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: server_info
+2023-02-04 20:01:30,147 DEBUG   SenderThread:85503 [sender.py:send_request():361] send_request: server_info
+2023-02-04 20:01:30,149 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: get_summary
+2023-02-04 20:01:30,149 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: sampled_history
+2023-02-04 20:01:30,330 INFO    MainThread:85503 [wandb_run.py:_footer_history_summary_info():3427] rendering history
+2023-02-04 20:01:30,330 INFO    MainThread:85503 [wandb_run.py:_footer_history_summary_info():3459] rendering summary
+2023-02-04 20:01:30,330 INFO    MainThread:85503 [wandb_run.py:_footer_sync_info():3383] logging synced files
+2023-02-04 20:01:30,331 DEBUG   HandlerThread:85503 [handler.py:handle_request():144] handle_request: shutdown
+2023-02-04 20:01:30,331 INFO    HandlerThread:85503 [handler.py:finish():841] shutting down handler
+2023-02-04 20:01:31,147 INFO    WriterThread:85503 [datastore.py:close():299] close: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_200007-3g06t1pi/run-3g06t1pi.wandb
+2023-02-04 20:01:31,330 INFO    SenderThread:85503 [sender.py:finish():1491] shutting down sender
+2023-02-04 20:01:31,330 INFO    SenderThread:85503 [file_pusher.py:finish():160] shutting down file pusher
+2023-02-04 20:01:31,330 INFO    SenderThread:85503 [file_pusher.py:join():165] waiting for file pusher

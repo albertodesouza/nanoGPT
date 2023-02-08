@@ -1,0 +1,182 @@
+Traceback (most recent call last):
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 400, in _compile
+    out_code = transform_code_object(code, transform)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/bytecode_transformation.py", line 341, in transform_code_object
+    transformations(instructions, code_options)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 387, in transform
+    tracer.run()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1684, in run
+    super().run()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 538, in run
+    and self.step()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 501, in step
+    getattr(self, inst.opname)(inst)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 307, in wrapper
+    return inner_fn(self, inst)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 966, in CALL_FUNCTION
+    self.call_function(fn, args, {})
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 435, in call_function
+    self.push(fn.call_function(self, args, kwargs))
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/variables/nn_module.py", line 220, in call_function
+    return tx.inline_user_function_return(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 471, in inline_user_function_return
+    result = InliningInstructionTranslator.inline_call(self, fn, args, kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1762, in inline_call
+    return cls.inline_call_(parent, func, args, kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1817, in inline_call_
+    tracer.run()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 538, in run
+    and self.step()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 501, in step
+    getattr(self, inst.opname)(inst)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 307, in wrapper
+    return inner_fn(self, inst)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 966, in CALL_FUNCTION
+    self.call_function(fn, args, {})
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 435, in call_function
+    self.push(fn.call_function(self, args, kwargs))
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/variables/nn_module.py", line 220, in call_function
+    return tx.inline_user_function_return(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 471, in inline_user_function_return
+    result = InliningInstructionTranslator.inline_call(self, fn, args, kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1762, in inline_call
+    return cls.inline_call_(parent, func, args, kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1817, in inline_call_
+    tracer.run()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 538, in run
+    and self.step()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 501, in step
+    getattr(self, inst.opname)(inst)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1031, in LOAD_ATTR
+    result = BuiltinVariable(getattr).call_function(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/variables/builtin.py", line 356, in call_function
+    result = handler(tx, *args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/variables/builtin.py", line 767, in call_getattr
+    member = getattr(obj.value, name)
+AttributeError: module 'torch.nn.functional' has no attribute 'scaled_dot_product_attention'
+from user code:
+   File "/home/lume/KARPATHY/nanoGPT/model.py", line 111, in forward
+    x = x + self.attn(self.ln_1(x))
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 72, in forward
+    y = torch.nn.functional.scaled_dot_product_attention(q, k, v, attn_mask=None, dropout_p=self.dropout, is_causal=True)
+Set torch._dynamo.config.verbose=True for more information
+You can suppress this exception and fall back to eager by setting:
+    torch._dynamo.config.suppress_errors = True
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "train.py", line 245, in <module>
+    losses = estimate_loss()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "train.py", line 205, in estimate_loss
+    logits, loss = model(X, Y)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1482, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 83, in forward
+    return self.dynamo_ctx(self._orig_mod.forward)(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 212, in _fn
+    return fn(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 333, in catch_errors
+    return callback(frame, cache_size, hooks)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 480, in _convert_frame
+    result = inner_convert(frame, cache_size, hooks)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 103, in _fn
+    return fn(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/utils.py", line 88, in time_wrapper
+    r = func(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 339, in _convert_frame_assert
+    return _compile(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 470, in _compile
+    raise InternalTorchDynamoError() from e
+torch._dynamo.exc.InternalTorchDynamoError
+Traceback (most recent call last):
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 400, in _compile
+    out_code = transform_code_object(code, transform)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/bytecode_transformation.py", line 341, in transform_code_object
+    transformations(instructions, code_options)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 387, in transform
+    tracer.run()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1684, in run
+    super().run()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 538, in run
+    and self.step()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 501, in step
+    getattr(self, inst.opname)(inst)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 307, in wrapper
+    return inner_fn(self, inst)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 966, in CALL_FUNCTION
+    self.call_function(fn, args, {})
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 435, in call_function
+    self.push(fn.call_function(self, args, kwargs))
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/variables/nn_module.py", line 220, in call_function
+    return tx.inline_user_function_return(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 471, in inline_user_function_return
+    result = InliningInstructionTranslator.inline_call(self, fn, args, kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1762, in inline_call
+    return cls.inline_call_(parent, func, args, kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1817, in inline_call_
+    tracer.run()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 538, in run
+    and self.step()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 501, in step
+    getattr(self, inst.opname)(inst)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 307, in wrapper
+    return inner_fn(self, inst)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 966, in CALL_FUNCTION
+    self.call_function(fn, args, {})
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 435, in call_function
+    self.push(fn.call_function(self, args, kwargs))
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/variables/nn_module.py", line 220, in call_function
+    return tx.inline_user_function_return(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 471, in inline_user_function_return
+    result = InliningInstructionTranslator.inline_call(self, fn, args, kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1762, in inline_call
+    return cls.inline_call_(parent, func, args, kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1817, in inline_call_
+    tracer.run()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 538, in run
+    and self.step()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 501, in step
+    getattr(self, inst.opname)(inst)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1031, in LOAD_ATTR
+    result = BuiltinVariable(getattr).call_function(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/variables/builtin.py", line 356, in call_function
+    result = handler(tx, *args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/variables/builtin.py", line 767, in call_getattr
+    member = getattr(obj.value, name)
+AttributeError: module 'torch.nn.functional' has no attribute 'scaled_dot_product_attention'
+from user code:
+   File "/home/lume/KARPATHY/nanoGPT/model.py", line 111, in forward
+    x = x + self.attn(self.ln_1(x))
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 72, in forward
+    y = torch.nn.functional.scaled_dot_product_attention(q, k, v, attn_mask=None, dropout_p=self.dropout, is_causal=True)
+Set torch._dynamo.config.verbose=True for more information
+You can suppress this exception and fall back to eager by setting:
+    torch._dynamo.config.suppress_errors = True
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "train.py", line 245, in <module>
+    losses = estimate_loss()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "train.py", line 205, in estimate_loss
+    logits, loss = model(X, Y)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1482, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 83, in forward
+    return self.dynamo_ctx(self._orig_mod.forward)(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 212, in _fn
+    return fn(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 333, in catch_errors
+    return callback(frame, cache_size, hooks)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 480, in _convert_frame
+    result = inner_convert(frame, cache_size, hooks)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 103, in _fn
+    return fn(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/utils.py", line 88, in time_wrapper
+    r = func(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 339, in _convert_frame_assert
+    return _compile(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 470, in _compile
+    raise InternalTorchDynamoError() from e
+torch._dynamo.exc.InternalTorchDynamoError

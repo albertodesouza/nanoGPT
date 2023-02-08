@@ -1,0 +1,18 @@
+
+step 0: train loss 10.9554, val loss 10.9549
+Traceback (most recent call last):
+  File "train.py", line 285, in <module>
+    scaler.scale(loss).backward()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 394.00 MiB (GPU 0; 5.81 GiB total capacity; 4.71 GiB already allocated; 68.38 MiB free; 4.81 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "train.py", line 285, in <module>
+    scaler.scale(loss).backward()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 394.00 MiB (GPU 0; 5.81 GiB total capacity; 4.71 GiB already allocated; 68.38 MiB free; 4.81 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

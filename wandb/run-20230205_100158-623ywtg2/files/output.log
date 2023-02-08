@@ -1,0 +1,234 @@
+
+step 0: train loss 11.0203, val loss 11.0147
+iter 0: loss 11.0054, time 20010.84ms
+iter 10: loss 9.8594, time 450.59ms
+iter 20: loss 9.4123, time 450.84ms
+iter 30: loss 9.1103, time 452.01ms
+iter 40: loss 8.9564, time 452.23ms
+iter 50: loss 7.9662, time 452.00ms
+iter 60: loss 8.0067, time 451.86ms
+iter 70: loss 7.4214, time 455.05ms
+iter 80: loss 7.4921, time 451.28ms
+iter 90: loss 7.2580, time 454.06ms
+iter 100: loss 6.8934, time 453.57ms
+iter 110: loss 7.0993, time 452.71ms
+iter 120: loss 6.9419, time 455.66ms
+iter 130: loss 7.2453, time 453.85ms
+iter 140: loss 7.0727, time 455.04ms
+iter 150: loss 7.5853, time 455.69ms
+iter 160: loss 7.0598, time 456.23ms
+iter 170: loss 6.6480, time 456.54ms
+iter 180: loss 6.8852, time 455.60ms
+iter 190: loss 6.9790, time 455.64ms
+iter 200: loss 6.6658, time 455.78ms
+iter 210: loss 7.1175, time 457.49ms
+iter 220: loss 6.8440, time 457.25ms
+iter 230: loss 6.3030, time 457.25ms
+iter 240: loss 6.1089, time 455.96ms
+iter 250: loss 6.7546, time 457.21ms
+iter 260: loss 6.5340, time 458.90ms
+iter 270: loss 5.7890, time 456.69ms
+iter 280: loss 6.9395, time 456.51ms
+iter 290: loss 6.6079, time 457.82ms
+iter 300: loss 6.8721, time 457.32ms
+iter 310: loss 6.8285, time 456.30ms
+iter 320: loss 6.7896, time 456.61ms
+iter 330: loss 5.9171, time 458.12ms
+iter 340: loss 6.3859, time 458.05ms
+iter 350: loss 6.4255, time 458.22ms
+iter 360: loss 6.6152, time 456.94ms
+iter 370: loss 6.1913, time 457.92ms
+iter 380: loss 6.6708, time 458.26ms
+iter 390: loss 6.1369, time 458.73ms
+iter 400: loss 6.0406, time 458.82ms
+iter 410: loss 6.2460, time 458.93ms
+iter 420: loss 5.7911, time 459.34ms
+iter 430: loss 6.0259, time 461.07ms
+iter 440: loss 6.3997, time 460.37ms
+iter 450: loss 6.0826, time 458.38ms
+iter 460: loss 6.5431, time 460.41ms
+iter 470: loss 6.6366, time 460.48ms
+iter 480: loss 6.7054, time 460.64ms
+iter 490: loss 5.7946, time 460.27ms
+step 500: train loss 6.4446, val loss 6.4143
+saving checkpoint to out
+iter 500: loss 6.5740, time 13260.52ms
+iter 510: loss 6.4115, time 457.53ms
+iter 520: loss 6.7200, time 457.61ms
+iter 530: loss 5.7361, time 459.56ms
+iter 540: loss 7.4538, time 458.87ms
+iter 550: loss 6.5575, time 459.86ms
+iter 560: loss 5.8174, time 459.97ms
+iter 570: loss 6.1334, time 460.32ms
+iter 580: loss 7.0504, time 460.46ms
+iter 590: loss 7.0552, time 461.36ms
+iter 600: loss 6.4557, time 459.45ms
+iter 610: loss 6.4153, time 460.46ms
+iter 620: loss 6.2202, time 459.42ms
+iter 630: loss 6.3628, time 459.72ms
+iter 640: loss 5.7054, time 460.76ms
+iter 650: loss 6.2000, time 459.97ms
+iter 660: loss 6.0885, time 459.66ms
+iter 670: loss 6.1132, time 460.04ms
+iter 680: loss 6.0335, time 459.89ms
+iter 690: loss 5.7939, time 461.27ms
+iter 700: loss 5.8042, time 461.55ms
+iter 710: loss 6.4325, time 460.57ms
+iter 720: loss 6.1025, time 460.80ms
+iter 730: loss 5.7322, time 460.71ms
+iter 740: loss 6.1406, time 460.97ms
+iter 750: loss 6.2793, time 460.33ms
+iter 760: loss 6.0544, time 460.94ms
+iter 770: loss 6.3430, time 460.14ms
+iter 780: loss 6.1106, time 459.80ms
+iter 790: loss 6.3245, time 460.27ms
+iter 800: loss 6.0924, time 460.95ms
+iter 810: loss 6.1172, time 460.01ms
+iter 820: loss 6.1986, time 460.80ms
+iter 830: loss 6.3769, time 459.78ms
+iter 840: loss 6.4421, time 460.03ms
+iter 850: loss 6.6691, time 459.94ms
+iter 860: loss 5.8475, time 459.92ms
+iter 870: loss 5.8723, time 459.40ms
+iter 880: loss 6.7223, time 460.06ms
+iter 890: loss 5.8581, time 460.58ms
+iter 900: loss 5.5715, time 460.45ms
+iter 910: loss 6.6298, time 459.17ms
+iter 920: loss 6.2990, time 459.02ms
+iter 930: loss 6.1245, time 459.51ms
+iter 940: loss 6.1913, time 459.66ms
+iter 950: loss 6.5214, time 459.60ms
+iter 960: loss 5.7558, time 459.78ms
+iter 970: loss 6.1041, time 460.09ms
+iter 980: loss 5.8494, time 460.50ms
+iter 990: loss 6.1753, time 460.83ms
+step 1000: train loss 6.0668, val loss 6.0651
+saving checkpoint to out
+iter 1000: loss 6.4813, time 151139.86ms
+iter 1010: loss 5.7073, time 451.22ms
+iter 1020: loss 5.6210, time 452.84ms
+iter 1030: loss 5.8068, time 452.56ms
+iter 1040: loss 6.8167, time 452.17ms
+iter 1050: loss 6.1131, time 454.20ms
+iter 1060: loss 6.1000, time 455.58ms
+iter 1070: loss 5.8482, time 455.49ms
+iter 1080: loss 6.1306, time 455.35ms
+iter 1090: loss 6.0299, time 456.92ms
+iter 1100: loss 5.3544, time 456.02ms
+iter 1110: loss 6.4951, time 456.04ms
+iter 1120: loss 5.8942, time 457.49ms
+iter 1130: loss 5.7679, time 455.98ms
+iter 1140: loss 6.0979, time 457.13ms
+iter 1150: loss 5.5279, time 457.90ms
+iter 1160: loss 6.0521, time 455.98ms
+iter 1170: loss 6.1236, time 456.70ms
+iter 1180: loss 5.9562, time 457.49ms
+iter 1190: loss 5.2119, time 458.36ms
+iter 1200: loss 6.1138, time 458.53ms
+iter 1210: loss 5.3385, time 458.86ms
+iter 1220: loss 6.0888, time 457.30ms
+iter 1230: loss 6.0685, time 458.29ms
+iter 1240: loss 6.5055, time 457.54ms
+iter 1250: loss 5.4697, time 458.39ms
+iter 1260: loss 5.9374, time 460.95ms
+iter 1270: loss 5.6242, time 459.53ms
+iter 1280: loss 5.7586, time 459.81ms
+iter 1290: loss 5.7330, time 460.66ms
+iter 1300: loss 5.6381, time 459.66ms
+iter 1310: loss 5.6527, time 460.50ms
+iter 1320: loss 5.6594, time 460.61ms
+iter 1330: loss 6.4225, time 459.44ms
+iter 1340: loss 6.2132, time 459.58ms
+iter 1350: loss 6.0311, time 459.33ms
+iter 1360: loss 5.6878, time 458.86ms
+iter 1370: loss 5.6842, time 459.12ms
+iter 1380: loss 5.4599, time 459.29ms
+iter 1390: loss 6.1323, time 458.89ms
+iter 1400: loss 4.8954, time 460.27ms
+iter 1410: loss 6.3128, time 460.82ms
+iter 1420: loss 6.1617, time 460.48ms
+iter 1430: loss 5.1589, time 460.44ms
+iter 1440: loss 5.8187, time 461.06ms
+iter 1450: loss 5.8304, time 459.76ms
+iter 1460: loss 6.1094, time 461.48ms
+iter 1470: loss 5.9906, time 460.56ms
+iter 1480: loss 5.6931, time 461.01ms
+iter 1490: loss 5.0048, time 459.91ms
+step 1500: train loss 5.8106, val loss 5.8332
+saving checkpoint to out
+iter 1500: loss 5.6878, time 13330.53ms
+iter 1510: loss 5.5659, time 459.14ms
+iter 1520: loss 5.7477, time 459.58ms
+iter 1530: loss 5.5420, time 460.50ms
+iter 1540: loss 5.6744, time 459.16ms
+iter 1550: loss 6.2297, time 459.88ms
+iter 1560: loss 5.9429, time 459.43ms
+iter 1570: loss 5.7852, time 459.71ms
+iter 1580: loss 6.4912, time 459.47ms
+iter 1590: loss 5.8901, time 460.24ms
+iter 1600: loss 5.0124, time 459.63ms
+iter 1610: loss 5.9415, time 462.12ms
+iter 1620: loss 5.3178, time 460.90ms
+iter 1630: loss 5.4109, time 460.99ms
+iter 1640: loss 5.5679, time 460.04ms
+iter 1650: loss 5.6481, time 460.49ms
+iter 1660: loss 5.5119, time 460.40ms
+iter 1670: loss 5.9765, time 460.77ms
+iter 1680: loss 5.3743, time 461.54ms
+iter 1690: loss 5.6367, time 461.17ms
+iter 1700: loss 5.3823, time 460.42ms
+iter 1710: loss 5.2352, time 460.43ms
+iter 1720: loss 4.9913, time 459.96ms
+iter 1730: loss 5.3470, time 460.52ms
+iter 1740: loss 6.0800, time 460.26ms
+iter 1750: loss 5.4826, time 460.43ms
+iter 1760: loss 5.8548, time 460.07ms
+iter 1770: loss 6.2274, time 459.93ms
+iter 1780: loss 5.1882, time 459.65ms
+iter 1790: loss 5.4680, time 459.89ms
+iter 1800: loss 4.8493, time 460.23ms
+iter 1810: loss 6.1504, time 460.19ms
+iter 1820: loss 6.4915, time 460.00ms
+iter 1830: loss 6.1426, time 461.67ms
+iter 1840: loss 5.2922, time 460.58ms
+iter 1850: loss 5.5226, time 459.76ms
+iter 1860: loss 6.4237, time 461.93ms
+iter 1870: loss 5.9799, time 460.97ms
+iter 1880: loss 5.8251, time 460.04ms
+iter 1890: loss 5.2723, time 460.61ms
+iter 1900: loss 5.5646, time 460.61ms
+iter 1910: loss 6.1005, time 460.75ms
+iter 1920: loss 6.5456, time 459.68ms
+iter 1930: loss 5.5065, time 459.38ms
+iter 1940: loss 5.9445, time 460.50ms
+iter 1950: loss 5.3905, time 460.03ms
+iter 1960: loss 5.8362, time 460.12ms
+iter 1970: loss 5.0827, time 460.77ms
+iter 1980: loss 5.4299, time 462.77ms
+iter 1990: loss 5.8786, time 462.02ms
+step 2000: train loss 5.6120, val loss 5.5813
+saving checkpoint to out
+iter 2000: loss 5.2443, time 13190.55ms
+iter 2010: loss 5.3993, time 460.21ms
+iter 2020: loss 5.4416, time 459.75ms
+iter 2030: loss 6.6031, time 459.84ms
+iter 2040: loss 5.3474, time 459.53ms
+iter 2050: loss 5.4841, time 460.43ms
+iter 2060: loss 5.1059, time 459.66ms
+iter 2070: loss 5.9310, time 459.85ms
+Traceback (most recent call last):
+  File "train.py", line 285, in <module>
+    scaler.scale(loss).backward()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "train.py", line 285, in <module>
+    scaler.scale(loss).backward()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

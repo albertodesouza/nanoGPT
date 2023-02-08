@@ -1,0 +1,175 @@
+2023-02-04 22:31:01,495 INFO    StreamThr :4121 [internal.py:wandb_internal():87] W&B internal server running at pid: 4121, started at: 2023-02-04 22:31:01.494314
+2023-02-04 22:31:01,498 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: status
+2023-02-04 22:31:01,501 INFO    WriterThread:4121 [datastore.py:open_for_write():85] open: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/run-ikrbgr0c.wandb
+2023-02-04 22:31:01,502 DEBUG   SenderThread:4121 [sender.py:send():334] send: header
+2023-02-04 22:31:01,529 DEBUG   SenderThread:4121 [sender.py:send():334] send: run
+2023-02-04 22:31:02,066 INFO    SenderThread:4121 [dir_watcher.py:__init__():216] watching files in: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files
+2023-02-04 22:31:02,066 INFO    SenderThread:4121 [sender.py:_start_run_threads():1065] run started: ikrbgr0c with start time 1675560661.494172
+2023-02-04 22:31:02,066 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: summary_record
+2023-02-04 22:31:02,066 INFO    SenderThread:4121 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-04 22:31:02,067 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: check_version
+2023-02-04 22:31:02,067 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: check_version
+2023-02-04 22:31:02,192 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: run_start
+2023-02-04 22:31:02,200 DEBUG   HandlerThread:4121 [system_info.py:__init__():31] System info init
+2023-02-04 22:31:02,200 DEBUG   HandlerThread:4121 [system_info.py:__init__():46] System info init done
+2023-02-04 22:31:02,200 INFO    HandlerThread:4121 [system_monitor.py:start():151] Starting system monitor
+2023-02-04 22:31:02,200 INFO    SystemMonitor:4121 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-02-04 22:31:02,200 INFO    HandlerThread:4121 [system_monitor.py:probe():172] Collecting system info
+2023-02-04 22:31:02,201 INFO    SystemMonitor:4121 [interfaces.py:start():168] Started cpu
+2023-02-04 22:31:02,201 INFO    SystemMonitor:4121 [interfaces.py:start():168] Started disk
+2023-02-04 22:31:02,202 INFO    SystemMonitor:4121 [interfaces.py:start():168] Started gpu
+2023-02-04 22:31:02,202 INFO    SystemMonitor:4121 [interfaces.py:start():168] Started memory
+2023-02-04 22:31:02,202 INFO    SystemMonitor:4121 [interfaces.py:start():168] Started network
+2023-02-04 22:31:02,209 ERROR   gpu       :4121 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 22:31:02,227 DEBUG   HandlerThread:4121 [system_info.py:probe():195] Probing system
+2023-02-04 22:31:02,235 DEBUG   HandlerThread:4121 [system_info.py:_probe_git():180] Probing git
+2023-02-04 22:31:02,250 DEBUG   HandlerThread:4121 [system_info.py:_probe_git():188] Probing git done
+2023-02-04 22:31:02,250 DEBUG   HandlerThread:4121 [system_info.py:probe():241] Probing system done
+2023-02-04 22:31:02,250 DEBUG   HandlerThread:4121 [system_monitor.py:probe():181] {'os': 'Linux-5.15.0-46-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2023-02-05T01:31:02.227827', 'startedAt': '2023-02-05T01:31:01.487950', 'docker': None, 'cuda': None, 'args': ('config/train_alberto_gpt2.py', '--compile=True'), 'state': 'running', 'program': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/karpathy/nanoGPT.git', 'commit': '3fd4c0c5efb653a9e22d88803e13c51832e37a46'}, 'email': 'alberto@lcad.inf.ufes.br', 'root': '/home/lume/KARPATHY/nanoGPT', 'host': 'lume-h4', 'username': 'lume', 'executable': '/usr/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2227.8428125, 'min': 800.0, 'max': 4600.0}, 'cpu_freq_per_core': [{'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 1145.485, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}], 'disk': {'total': 1344.4707374572754, 'used': 733.4407539367676}, 'gpu': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'memory_total': 6442450944}], 'memory': {'total': 15.407585144042969}}
+2023-02-04 22:31:02,250 INFO    HandlerThread:4121 [system_monitor.py:probe():182] Finished collecting system info
+2023-02-04 22:31:02,250 INFO    HandlerThread:4121 [system_monitor.py:probe():185] Publishing system info
+2023-02-04 22:31:02,251 DEBUG   HandlerThread:4121 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-02-04 22:31:02,251 DEBUG   HandlerThread:4121 [system_info.py:_save_pip():67] Saving pip packages done
+2023-02-04 22:31:02,252 INFO    HandlerThread:4121 [system_monitor.py:probe():187] Finished publishing system info
+2023-02-04 22:31:02,257 DEBUG   SenderThread:4121 [sender.py:send():334] send: files
+2023-02-04 22:31:02,257 INFO    SenderThread:4121 [sender.py:_save_file():1319] saving file wandb-metadata.json with policy now
+2023-02-04 22:31:02,265 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: stop_status
+2023-02-04 22:31:02,266 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: stop_status
+2023-02-04 22:31:02,505 DEBUG   SenderThread:4121 [sender.py:send():334] send: telemetry
+2023-02-04 22:31:02,963 INFO    Thread-16 :4121 [upload_job.py:push():143] Uploaded file /tmp/tmpgjtk5r3wwandb/wuspl0l5-wandb-metadata.json
+2023-02-04 22:31:03,067 INFO    Thread-13 :4121 [dir_watcher.py:_on_file_created():275] file/dir created: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files/wandb-summary.json
+2023-02-04 22:31:03,067 INFO    Thread-13 :4121 [dir_watcher.py:_on_file_created():275] file/dir created: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files/wandb-metadata.json
+2023-02-04 22:31:03,067 INFO    Thread-13 :4121 [dir_watcher.py:_on_file_created():275] file/dir created: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files/requirements.txt
+2023-02-04 22:31:04,210 ERROR   gpu       :4121 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-04 22:31:05,143 DEBUG   SenderThread:4121 [sender.py:send():334] send: exit
+2023-02-04 22:31:05,143 INFO    SenderThread:4121 [sender.py:send_exit():557] handling exit code: 1
+2023-02-04 22:31:05,143 INFO    SenderThread:4121 [sender.py:send_exit():559] handling runtime: 2
+2023-02-04 22:31:05,143 INFO    SenderThread:4121 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-04 22:31:05,143 INFO    SenderThread:4121 [sender.py:send_exit():565] send defer
+2023-02-04 22:31:05,144 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 22:31:05,144 INFO    HandlerThread:4121 [handler.py:handle_request_defer():170] handle defer: 0
+2023-02-04 22:31:05,144 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: defer
+2023-02-04 22:31:05,144 INFO    SenderThread:4121 [sender.py:send_request_defer():581] handle sender defer: 0
+2023-02-04 22:31:05,144 INFO    SenderThread:4121 [sender.py:transition_state():585] send defer: 1
+2023-02-04 22:31:05,145 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 22:31:05,145 INFO    HandlerThread:4121 [handler.py:handle_request_defer():170] handle defer: 1
+2023-02-04 22:31:05,145 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: defer
+2023-02-04 22:31:05,145 INFO    SenderThread:4121 [sender.py:send_request_defer():581] handle sender defer: 1
+2023-02-04 22:31:05,145 INFO    SenderThread:4121 [sender.py:transition_state():585] send defer: 2
+2023-02-04 22:31:05,145 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 22:31:05,146 INFO    HandlerThread:4121 [handler.py:handle_request_defer():170] handle defer: 2
+2023-02-04 22:31:05,146 INFO    HandlerThread:4121 [system_monitor.py:finish():161] Stopping system monitor
+2023-02-04 22:31:05,146 DEBUG   SystemMonitor:4121 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-02-04 22:31:05,147 DEBUG   SystemMonitor:4121 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-02-04 22:31:05,147 DEBUG   SystemMonitor:4121 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-02-04 22:31:05,148 INFO    HandlerThread:4121 [interfaces.py:finish():175] Joined cpu
+2023-02-04 22:31:05,149 INFO    HandlerThread:4121 [interfaces.py:finish():175] Joined disk
+2023-02-04 22:31:05,172 INFO    HandlerThread:4121 [interfaces.py:finish():175] Joined gpu
+2023-02-04 22:31:05,172 INFO    HandlerThread:4121 [interfaces.py:finish():175] Joined memory
+2023-02-04 22:31:05,172 INFO    HandlerThread:4121 [interfaces.py:finish():175] Joined network
+2023-02-04 22:31:05,172 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: defer
+2023-02-04 22:31:05,172 INFO    SenderThread:4121 [sender.py:send_request_defer():581] handle sender defer: 2
+2023-02-04 22:31:05,172 INFO    SenderThread:4121 [sender.py:transition_state():585] send defer: 3
+2023-02-04 22:31:05,173 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 22:31:05,173 DEBUG   SenderThread:4121 [sender.py:send():334] send: stats
+2023-02-04 22:31:05,173 INFO    HandlerThread:4121 [handler.py:handle_request_defer():170] handle defer: 3
+2023-02-04 22:31:05,173 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: defer
+2023-02-04 22:31:05,173 INFO    SenderThread:4121 [sender.py:send_request_defer():581] handle sender defer: 3
+2023-02-04 22:31:05,173 INFO    SenderThread:4121 [sender.py:transition_state():585] send defer: 4
+2023-02-04 22:31:05,173 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 22:31:05,173 INFO    HandlerThread:4121 [handler.py:handle_request_defer():170] handle defer: 4
+2023-02-04 22:31:05,173 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: defer
+2023-02-04 22:31:05,173 INFO    SenderThread:4121 [sender.py:send_request_defer():581] handle sender defer: 4
+2023-02-04 22:31:05,173 INFO    SenderThread:4121 [sender.py:transition_state():585] send defer: 5
+2023-02-04 22:31:05,173 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 22:31:05,174 INFO    HandlerThread:4121 [handler.py:handle_request_defer():170] handle defer: 5
+2023-02-04 22:31:05,174 DEBUG   SenderThread:4121 [sender.py:send():334] send: summary
+2023-02-04 22:31:05,174 INFO    SenderThread:4121 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-04 22:31:05,174 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: defer
+2023-02-04 22:31:05,174 INFO    SenderThread:4121 [sender.py:send_request_defer():581] handle sender defer: 5
+2023-02-04 22:31:05,174 INFO    SenderThread:4121 [sender.py:transition_state():585] send defer: 6
+2023-02-04 22:31:05,174 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 22:31:05,174 INFO    HandlerThread:4121 [handler.py:handle_request_defer():170] handle defer: 6
+2023-02-04 22:31:05,174 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: defer
+2023-02-04 22:31:05,174 INFO    SenderThread:4121 [sender.py:send_request_defer():581] handle sender defer: 6
+2023-02-04 22:31:05,177 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: status_report
+2023-02-04 22:31:05,483 INFO    SenderThread:4121 [sender.py:transition_state():585] send defer: 7
+2023-02-04 22:31:05,483 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 22:31:05,483 INFO    HandlerThread:4121 [handler.py:handle_request_defer():170] handle defer: 7
+2023-02-04 22:31:05,484 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: defer
+2023-02-04 22:31:05,484 INFO    SenderThread:4121 [sender.py:send_request_defer():581] handle sender defer: 7
+2023-02-04 22:31:06,068 INFO    Thread-13 :4121 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files/wandb-summary.json
+2023-02-04 22:31:06,068 INFO    Thread-13 :4121 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files/config.yaml
+2023-02-04 22:31:06,069 INFO    Thread-13 :4121 [dir_watcher.py:_on_file_created():275] file/dir created: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files/output.log
+2023-02-04 22:31:06,125 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-04 22:31:07,098 INFO    SenderThread:4121 [sender.py:transition_state():585] send defer: 8
+2023-02-04 22:31:07,098 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: poll_exit
+2023-02-04 22:31:07,099 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 22:31:07,099 INFO    HandlerThread:4121 [handler.py:handle_request_defer():170] handle defer: 8
+2023-02-04 22:31:07,099 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: defer
+2023-02-04 22:31:07,099 INFO    SenderThread:4121 [sender.py:send_request_defer():581] handle sender defer: 8
+2023-02-04 22:31:07,104 INFO    SenderThread:4121 [sender.py:transition_state():585] send defer: 9
+2023-02-04 22:31:07,104 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 22:31:07,104 INFO    HandlerThread:4121 [handler.py:handle_request_defer():170] handle defer: 9
+2023-02-04 22:31:07,104 DEBUG   SenderThread:4121 [sender.py:send():334] send: artifact
+2023-02-04 22:31:07,126 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-04 22:31:08,069 INFO    Thread-13 :4121 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files/output.log
+2023-02-04 22:31:08,653 INFO    SenderThread:4121 [sender.py:send_artifact():1415] sent artifact job-https___github.com_karpathy_nanoGPT.git_train.py - {'id': 'QXJ0aWZhY3Q6MzU0Nzc1MzU0', 'digest': 'c5c77450e4f7e8a94af70f1a783198a0', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_karpathy_nanoGPT.git_train.py', 'alias': 'v3'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjUxMjk1MDc2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MzU0Nzc3MjUx', 'versionIndex': 4}}, 'version': 'v3'}
+2023-02-04 22:31:08,653 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: defer
+2023-02-04 22:31:08,653 INFO    SenderThread:4121 [sender.py:send_request_defer():581] handle sender defer: 9
+2023-02-04 22:31:08,653 INFO    SenderThread:4121 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-02-04 22:31:09,070 INFO    SenderThread:4121 [dir_watcher.py:finish():392] scan: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files
+2023-02-04 22:31:09,071 INFO    SenderThread:4121 [dir_watcher.py:finish():406] scan save: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files/requirements.txt requirements.txt
+2023-02-04 22:31:09,071 INFO    SenderThread:4121 [dir_watcher.py:finish():406] scan save: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files/wandb-metadata.json wandb-metadata.json
+2023-02-04 22:31:09,071 INFO    SenderThread:4121 [dir_watcher.py:finish():406] scan save: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files/wandb-summary.json wandb-summary.json
+2023-02-04 22:31:09,071 INFO    SenderThread:4121 [dir_watcher.py:finish():406] scan save: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files/output.log output.log
+2023-02-04 22:31:09,077 INFO    SenderThread:4121 [dir_watcher.py:finish():406] scan save: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files/config.yaml config.yaml
+2023-02-04 22:31:09,077 INFO    SenderThread:4121 [sender.py:transition_state():585] send defer: 10
+2023-02-04 22:31:09,078 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: poll_exit
+2023-02-04 22:31:09,078 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 22:31:09,078 INFO    HandlerThread:4121 [handler.py:handle_request_defer():170] handle defer: 10
+2023-02-04 22:31:09,078 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: defer
+2023-02-04 22:31:09,078 INFO    SenderThread:4121 [sender.py:send_request_defer():581] handle sender defer: 10
+2023-02-04 22:31:09,078 INFO    SenderThread:4121 [file_pusher.py:finish():160] shutting down file pusher
+2023-02-04 22:31:09,809 INFO    Thread-17 :4121 [upload_job.py:push():143] Uploaded file /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files/requirements.txt
+2023-02-04 22:31:09,821 INFO    Thread-18 :4121 [upload_job.py:push():143] Uploaded file /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files/wandb-summary.json
+2023-02-04 22:31:09,835 INFO    Thread-19 :4121 [upload_job.py:push():143] Uploaded file /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files/output.log
+2023-02-04 22:31:09,948 INFO    Thread-20 :4121 [upload_job.py:push():143] Uploaded file /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/files/config.yaml
+2023-02-04 22:31:10,149 INFO    Thread-12 :4121 [sender.py:transition_state():585] send defer: 11
+2023-02-04 22:31:10,150 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 22:31:10,150 INFO    HandlerThread:4121 [handler.py:handle_request_defer():170] handle defer: 11
+2023-02-04 22:31:10,151 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: defer
+2023-02-04 22:31:10,151 INFO    SenderThread:4121 [sender.py:send_request_defer():581] handle sender defer: 11
+2023-02-04 22:31:10,151 INFO    SenderThread:4121 [file_pusher.py:join():165] waiting for file pusher
+2023-02-04 22:31:10,151 INFO    SenderThread:4121 [sender.py:transition_state():585] send defer: 12
+2023-02-04 22:31:10,151 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 22:31:10,152 INFO    HandlerThread:4121 [handler.py:handle_request_defer():170] handle defer: 12
+2023-02-04 22:31:10,152 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: defer
+2023-02-04 22:31:10,152 INFO    SenderThread:4121 [sender.py:send_request_defer():581] handle sender defer: 12
+2023-02-04 22:31:10,395 INFO    SenderThread:4121 [sender.py:transition_state():585] send defer: 13
+2023-02-04 22:31:10,395 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 22:31:10,395 INFO    HandlerThread:4121 [handler.py:handle_request_defer():170] handle defer: 13
+2023-02-04 22:31:10,396 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: defer
+2023-02-04 22:31:10,396 INFO    SenderThread:4121 [sender.py:send_request_defer():581] handle sender defer: 13
+2023-02-04 22:31:10,396 INFO    SenderThread:4121 [sender.py:transition_state():585] send defer: 14
+2023-02-04 22:31:10,397 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: defer
+2023-02-04 22:31:10,397 INFO    HandlerThread:4121 [handler.py:handle_request_defer():170] handle defer: 14
+2023-02-04 22:31:10,398 DEBUG   SenderThread:4121 [sender.py:send():334] send: final
+2023-02-04 22:31:10,398 DEBUG   SenderThread:4121 [sender.py:send():334] send: footer
+2023-02-04 22:31:10,398 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: defer
+2023-02-04 22:31:10,398 INFO    SenderThread:4121 [sender.py:send_request_defer():581] handle sender defer: 14
+2023-02-04 22:31:10,399 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-04 22:31:10,400 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: server_info
+2023-02-04 22:31:10,401 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: poll_exit
+2023-02-04 22:31:10,402 DEBUG   SenderThread:4121 [sender.py:send_request():361] send_request: server_info
+2023-02-04 22:31:10,402 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: get_summary
+2023-02-04 22:31:10,404 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: sampled_history
+2023-02-04 22:31:10,701 INFO    MainThread:4121 [wandb_run.py:_footer_history_summary_info():3427] rendering history
+2023-02-04 22:31:10,701 INFO    MainThread:4121 [wandb_run.py:_footer_history_summary_info():3459] rendering summary
+2023-02-04 22:31:10,701 INFO    MainThread:4121 [wandb_run.py:_footer_sync_info():3383] logging synced files
+2023-02-04 22:31:10,702 DEBUG   HandlerThread:4121 [handler.py:handle_request():144] handle_request: shutdown
+2023-02-04 22:31:10,702 INFO    HandlerThread:4121 [handler.py:finish():841] shutting down handler
+2023-02-04 22:31:11,401 INFO    WriterThread:4121 [datastore.py:close():299] close: /home/lume/KARPATHY/nanoGPT/wandb/run-20230204_223101-ikrbgr0c/run-ikrbgr0c.wandb
+2023-02-04 22:31:11,701 INFO    SenderThread:4121 [sender.py:finish():1491] shutting down sender
+2023-02-04 22:31:11,701 INFO    SenderThread:4121 [file_pusher.py:finish():160] shutting down file pusher
+2023-02-04 22:31:11,701 INFO    SenderThread:4121 [file_pusher.py:join():165] waiting for file pusher

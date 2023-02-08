@@ -1,0 +1,35 @@
+step 0: train loss 11.0204, val loss 11.0147
+iter 0: loss 11.0045, time 19628.03ms
+iter 10: loss 10.4300, time 627.93ms
+Traceback (most recent call last):
+  File "train.py", line 291, in <module>
+    scaler.step(optimizer)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 313, in step
+    return optimizer.step(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/optim/optimizer.py", line 219, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/optim/optimizer.py", line 32, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/optim/adamw.py", line 195, in step
+    adamw(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/optim/adamw.py", line 260, in adamw
+    func(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/optim/adamw.py", line 373, in _single_tensor_adamw
+    denom = (exp_avg_sq.sqrt() / bias_correction2_sqrt).add_(eps)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "train.py", line 291, in <module>
+    scaler.step(optimizer)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 313, in step
+    return optimizer.step(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/optim/optimizer.py", line 219, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/optim/optimizer.py", line 32, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/optim/adamw.py", line 195, in step
+    adamw(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/optim/adamw.py", line 260, in adamw
+    func(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/optim/adamw.py", line 373, in _single_tensor_adamw
+    denom = (exp_avg_sq.sqrt() / bias_correction2_sqrt).add_(eps)
+KeyboardInterrupt

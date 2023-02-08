@@ -1,0 +1,28 @@
+step 0: train loss 11.0204, val loss 11.0147
+iter 0: loss 11.0054, time 15315.44ms
+iter 10: loss 10.4304, time 576.06ms
+iter 20: loss 9.7729, time 576.51ms
+iter 30: loss 9.5490, time 576.80ms
+iter 40: loss 9.5976, time 577.15ms
+iter 50: loss 8.8696, time 578.25ms
+iter 60: loss 9.0639, time 577.57ms
+iter 70: loss 8.6261, time 579.16ms
+iter 80: loss 8.8528, time 580.57ms
+iter 90: loss 8.5014, time 579.51ms
+iter 100: loss 7.8671, time 579.47ms
+Traceback (most recent call last):
+  File "train.py", line 285, in <module>
+    scaler.scale(loss).backward()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "train.py", line 285, in <module>
+    scaler.scale(loss).backward()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

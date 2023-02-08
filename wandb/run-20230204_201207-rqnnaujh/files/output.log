@@ -1,0 +1,248 @@
+concurrent.futures.process._RemoteTraceback:
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/process.py", line 239, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/codecache.py", line 548, in _worker_compile
+    kernel.precompile(warm_cache_only_with_cc=cc)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/triton_ops/autotune.py", line 67, in precompile
+    self.launchers = [
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/triton_ops/autotune.py", line 68, in <listcomp>
+    self._precompile_config(c, warm_cache_only_with_cc)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/triton_ops/autotune.py", line 81, in _precompile_config
+    triton.compile(
+  File "/home/lume/.local/lib/python3.8/site-packages/triton/compiler.py", line 1239, in compile
+    so = _build(fn.__name__, src_path, tmpdir)
+  File "/home/lume/.local/lib/python3.8/site-packages/triton/compiler.py", line 1169, in _build
+    ret = subprocess.check_call(cc_cmd)
+  File "/usr/lib/python3.8/subprocess.py", line 364, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['/usr/bin/gcc', '/tmp/tmpguwzo97s/main.c', '-O3', '-I/usr/local/cuda/include', '-I/usr/include/python3.8', '-I/tmp/tmpguwzo97s', '-shared', '-fPIC', '-lcuda', '-o', '/tmp/tmpguwzo97s/triton_.cpython-38-x86_64-linux-gnu.so', '-L/usr/share/man/man7']' returned non-zero exit status 1.
+"""
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/output_graph.py", line 670, in call_user_compiler
+    compiled_fn = compiler_fn(gm, self.fake_example_inputs())
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/debug_utils.py", line 1055, in debug_wrapper
+    compiled_gm = compiler_fn(gm, example_inputs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/__init__.py", line 1368, in __call__
+    return self.compile_fn(model_, inputs_, config_patches=self.config)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/compile_fx.py", line 426, in compile_fx
+    return aot_autograd(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/backends/common.py", line 48, in compiler_fn
+    cg = aot_module_simplified(gm, example_inputs, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 2486, in aot_module_simplified
+    compiled_fn = create_aot_dispatcher_function(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/utils.py", line 163, in time_wrapper
+    r = func(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 2183, in create_aot_dispatcher_function
+    compiled_fn = compiler_fn(flat_fn, fake_flat_args, aot_config)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 1414, in aot_wrapper_dedupe
+    return compiler_fn(flat_fn, leaf_flat_args, aot_config)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 1064, in aot_dispatch_base
+    compiled_fw = aot_config.fw_compiler(fw_module, flat_args)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/utils.py", line 163, in time_wrapper
+    r = func(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/compile_fx.py", line 401, in fw_compiler
+    return inner_compile(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/debug_utils.py", line 595, in debug_wrapper
+    compiled_fn = compiler_fn(gm, example_inputs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/debug.py", line 239, in inner
+    return fn(*args, **kwargs)
+  File "/usr/lib/python3.8/contextlib.py", line 75, in inner
+    return func(*args, **kwds)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/compile_fx.py", line 155, in compile_fx_inner
+    compiled_fn = graph.compile_to_fn()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/graph.py", line 576, in compile_to_fn
+    return self.compile_to_module().call
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/utils.py", line 163, in time_wrapper
+    r = func(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/graph.py", line 565, in compile_to_module
+    mod = PyCodeCache.load(code)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/codecache.py", line 527, in load
+    exec(code, mod.__dict__, mod.__dict__)
+  File "/tmp/torchinductor_lume/fw/cfwl5qkpsiru3nz2fxzwazc357tpwlfulwm5bwprjyyoclow2gql.py", line 792, in <module>
+    async_compile.wait(globals())
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/codecache.py", line 714, in wait
+    scope[key] = result.result()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/codecache.py", line 572, in result
+    self.future.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+subprocess.CalledProcessError: Command '['/usr/bin/gcc', '/tmp/tmpguwzo97s/main.c', '-O3', '-I/usr/local/cuda/include', '-I/usr/include/python3.8', '-I/tmp/tmpguwzo97s', '-shared', '-fPIC', '-lcuda', '-o', '/tmp/tmpguwzo97s/triton_.cpython-38-x86_64-linux-gnu.so', '-L/usr/share/man/man7']' returned non-zero exit status 1.
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "train.py", line 245, in <module>
+    losses = estimate_loss()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "train.py", line 205, in estimate_loss
+    logits, loss = model(X, Y)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 82, in forward
+    return self.dynamo_ctx(self._orig_mod.forward)(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 209, in _fn
+    return fn(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 330, in catch_errors
+    return callback(frame, cache_size, hooks)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 404, in _convert_frame
+    result = inner_convert(frame, cache_size, hooks)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 104, in _fn
+    return fn(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 262, in _convert_frame_assert
+    return _compile(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/utils.py", line 163, in time_wrapper
+    r = func(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 324, in _compile
+    out_code = transform_code_object(code, transform)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/bytecode_transformation.py", line 361, in transform_code_object
+    transformations(instructions, code_options)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 311, in transform
+    tracer.run()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1715, in run
+    super().run()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 564, in run
+    and self.step()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 527, in step
+    getattr(self, inst.opname)(inst)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1781, in RETURN_VALUE
+    self.output.compile_subgraph(self)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/output_graph.py", line 541, in compile_subgraph
+    self.compile_and_call_fx_graph(tx, pass2.graph_output_vars(), root)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/output_graph.py", line 588, in compile_and_call_fx_graph
+    compiled_fn = self.call_user_compiler(gm)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/utils.py", line 163, in time_wrapper
+    r = func(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/output_graph.py", line 675, in call_user_compiler
+    raise BackendCompilerFailed(self.compiler_fn, e) from e
+torch._dynamo.exc.BackendCompilerFailed: debug_wrapper raised CalledProcessError: Command '['/usr/bin/gcc', '/tmp/tmpguwzo97s/main.c', '-O3', '-I/usr/local/cuda/include', '-I/usr/include/python3.8', '-I/tmp/tmpguwzo97s', '-shared', '-fPIC', '-lcuda', '-o', '/tmp/tmpguwzo97s/triton_.cpython-38-x86_64-linux-gnu.so', '-L/usr/share/man/man7']' returned non-zero exit status 1.
+Set torch._dynamo.config.verbose=True for more information
+You can suppress this exception and fall back to eager by setting:
+    torch._dynamo.config.suppress_errors = True
+concurrent.futures.process._RemoteTraceback:
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/process.py", line 239, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/codecache.py", line 548, in _worker_compile
+    kernel.precompile(warm_cache_only_with_cc=cc)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/triton_ops/autotune.py", line 67, in precompile
+    self.launchers = [
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/triton_ops/autotune.py", line 68, in <listcomp>
+    self._precompile_config(c, warm_cache_only_with_cc)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/triton_ops/autotune.py", line 81, in _precompile_config
+    triton.compile(
+  File "/home/lume/.local/lib/python3.8/site-packages/triton/compiler.py", line 1239, in compile
+    so = _build(fn.__name__, src_path, tmpdir)
+  File "/home/lume/.local/lib/python3.8/site-packages/triton/compiler.py", line 1169, in _build
+    ret = subprocess.check_call(cc_cmd)
+  File "/usr/lib/python3.8/subprocess.py", line 364, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['/usr/bin/gcc', '/tmp/tmpguwzo97s/main.c', '-O3', '-I/usr/local/cuda/include', '-I/usr/include/python3.8', '-I/tmp/tmpguwzo97s', '-shared', '-fPIC', '-lcuda', '-o', '/tmp/tmpguwzo97s/triton_.cpython-38-x86_64-linux-gnu.so', '-L/usr/share/man/man7']' returned non-zero exit status 1.
+"""
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/output_graph.py", line 670, in call_user_compiler
+    compiled_fn = compiler_fn(gm, self.fake_example_inputs())
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/debug_utils.py", line 1055, in debug_wrapper
+    compiled_gm = compiler_fn(gm, example_inputs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/__init__.py", line 1368, in __call__
+    return self.compile_fn(model_, inputs_, config_patches=self.config)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/compile_fx.py", line 426, in compile_fx
+    return aot_autograd(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/backends/common.py", line 48, in compiler_fn
+    cg = aot_module_simplified(gm, example_inputs, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 2486, in aot_module_simplified
+    compiled_fn = create_aot_dispatcher_function(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/utils.py", line 163, in time_wrapper
+    r = func(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 2183, in create_aot_dispatcher_function
+    compiled_fn = compiler_fn(flat_fn, fake_flat_args, aot_config)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 1414, in aot_wrapper_dedupe
+    return compiler_fn(flat_fn, leaf_flat_args, aot_config)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 1064, in aot_dispatch_base
+    compiled_fw = aot_config.fw_compiler(fw_module, flat_args)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/utils.py", line 163, in time_wrapper
+    r = func(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/compile_fx.py", line 401, in fw_compiler
+    return inner_compile(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/debug_utils.py", line 595, in debug_wrapper
+    compiled_fn = compiler_fn(gm, example_inputs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/debug.py", line 239, in inner
+    return fn(*args, **kwargs)
+  File "/usr/lib/python3.8/contextlib.py", line 75, in inner
+    return func(*args, **kwds)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/compile_fx.py", line 155, in compile_fx_inner
+    compiled_fn = graph.compile_to_fn()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/graph.py", line 576, in compile_to_fn
+    return self.compile_to_module().call
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/utils.py", line 163, in time_wrapper
+    r = func(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/graph.py", line 565, in compile_to_module
+    mod = PyCodeCache.load(code)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/codecache.py", line 527, in load
+    exec(code, mod.__dict__, mod.__dict__)
+  File "/tmp/torchinductor_lume/fw/cfwl5qkpsiru3nz2fxzwazc357tpwlfulwm5bwprjyyoclow2gql.py", line 792, in <module>
+    async_compile.wait(globals())
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/codecache.py", line 714, in wait
+    scope[key] = result.result()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/codecache.py", line 572, in result
+    self.future.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+subprocess.CalledProcessError: Command '['/usr/bin/gcc', '/tmp/tmpguwzo97s/main.c', '-O3', '-I/usr/local/cuda/include', '-I/usr/include/python3.8', '-I/tmp/tmpguwzo97s', '-shared', '-fPIC', '-lcuda', '-o', '/tmp/tmpguwzo97s/triton_.cpython-38-x86_64-linux-gnu.so', '-L/usr/share/man/man7']' returned non-zero exit status 1.
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "train.py", line 245, in <module>
+    losses = estimate_loss()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "train.py", line 205, in estimate_loss
+    logits, loss = model(X, Y)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 82, in forward
+    return self.dynamo_ctx(self._orig_mod.forward)(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 209, in _fn
+    return fn(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 330, in catch_errors
+    return callback(frame, cache_size, hooks)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 404, in _convert_frame
+    result = inner_convert(frame, cache_size, hooks)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 104, in _fn
+    return fn(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 262, in _convert_frame_assert
+    return _compile(
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/utils.py", line 163, in time_wrapper
+    r = func(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 324, in _compile
+    out_code = transform_code_object(code, transform)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/bytecode_transformation.py", line 361, in transform_code_object
+    transformations(instructions, code_options)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 311, in transform
+    tracer.run()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1715, in run
+    super().run()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 564, in run
+    and self.step()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 527, in step
+    getattr(self, inst.opname)(inst)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1781, in RETURN_VALUE
+    self.output.compile_subgraph(self)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/output_graph.py", line 541, in compile_subgraph
+    self.compile_and_call_fx_graph(tx, pass2.graph_output_vars(), root)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/output_graph.py", line 588, in compile_and_call_fx_graph
+    compiled_fn = self.call_user_compiler(gm)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/utils.py", line 163, in time_wrapper
+    r = func(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/output_graph.py", line 675, in call_user_compiler
+    raise BackendCompilerFailed(self.compiler_fn, e) from e
+torch._dynamo.exc.BackendCompilerFailed: debug_wrapper raised CalledProcessError: Command '['/usr/bin/gcc', '/tmp/tmpguwzo97s/main.c', '-O3', '-I/usr/local/cuda/include', '-I/usr/include/python3.8', '-I/tmp/tmpguwzo97s', '-shared', '-fPIC', '-lcuda', '-o', '/tmp/tmpguwzo97s/triton_.cpython-38-x86_64-linux-gnu.so', '-L/usr/share/man/man7']' returned non-zero exit status 1.
+Set torch._dynamo.config.verbose=True for more information
+You can suppress this exception and fall back to eager by setting:
+    torch._dynamo.config.suppress_errors = True

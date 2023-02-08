@@ -1,0 +1,80 @@
+/home/lume/.local/lib/python3.8/site-packages/torch/nn/utils/stateless.py:44: UserWarning: functional_call was passed multiple values for tied weights. This behavior is deprecated and will be an error in future versions
+  warnings.warn("functional_call was passed multiple values for tied weights. "
+/home/lume/.local/lib/python3.8/site-packages/torch/nn/utils/stateless.py:44: UserWarning: functional_call was passed multiple values for tied weights. This behavior is deprecated and will be an error in future versions
+  warnings.warn("functional_call was passed multiple values for tied weights. "
+Traceback (most recent call last):
+  File "train.py", line 245, in <module>
+    losses = estimate_loss()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "train.py", line 205, in estimate_loss
+    logits, loss = model(X, Y)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1482, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 83, in forward
+    return self.dynamo_ctx(self._orig_mod.forward)(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 212, in _fn
+    return fn(*args, **kwargs)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 170, in forward
+    def forward(self, idx, targets=None):
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 212, in _fn
+    return fn(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 2369, in forward
+    return compiled_fn(full_args)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 961, in new_fn
+    fw_outs = call_func_with_args(compiled_fw, args, disable_amp=disable_amp)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 917, in call_func_with_args
+    out = normalize_as_list(f(args))
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/compile_fx.py", line 203, in run
+    return model(new_inputs)
+  File "/tmp/torchinductor_lume/gi/cgib6qo3eq2ezv2y7jk7fbgsgl6su24mtz6w5sufxf6tpvhqmcy4.py", line 990, in call
+    triton_fused_add_add_1_arange_convert_element_type_1_embedding_embedding_1_mul_mul_1_rsqrt_sub_0.run(arg88_1, arg25_1, arg26_1, arg0_1, buf3, 1024, 768, grid=grid(1024), stream=stream0)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/triton_ops/autotune.py", line 170, in run
+    self.autotune_to_one_config(*args, grid=grid)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/utils.py", line 88, in time_wrapper
+    r = func(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/triton_ops/autotune.py", line 157, in autotune_to_one_config
+    timings = {
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/triton_ops/autotune.py", line 158, in <dictcomp>
+    launcher: self.bench(launcher, *cloned_args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/triton_ops/autotune.py", line 139, in bench
+    return do_bench(kernel_call, rep=40, fast_flush=True)
+TypeError: do_bench() got an unexpected keyword argument 'fast_flush'
+Traceback (most recent call last):
+  File "train.py", line 245, in <module>
+    losses = estimate_loss()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "train.py", line 205, in estimate_loss
+    logits, loss = model(X, Y)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1482, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 83, in forward
+    return self.dynamo_ctx(self._orig_mod.forward)(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 212, in _fn
+    return fn(*args, **kwargs)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 170, in forward
+    def forward(self, idx, targets=None):
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 212, in _fn
+    return fn(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 2369, in forward
+    return compiled_fn(full_args)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 961, in new_fn
+    fw_outs = call_func_with_args(compiled_fw, args, disable_amp=disable_amp)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 917, in call_func_with_args
+    out = normalize_as_list(f(args))
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/compile_fx.py", line 203, in run
+    return model(new_inputs)
+  File "/tmp/torchinductor_lume/gi/cgib6qo3eq2ezv2y7jk7fbgsgl6su24mtz6w5sufxf6tpvhqmcy4.py", line 990, in call
+    triton_fused_add_add_1_arange_convert_element_type_1_embedding_embedding_1_mul_mul_1_rsqrt_sub_0.run(arg88_1, arg25_1, arg26_1, arg0_1, buf3, 1024, 768, grid=grid(1024), stream=stream0)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/triton_ops/autotune.py", line 170, in run
+    self.autotune_to_one_config(*args, grid=grid)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_dynamo/utils.py", line 88, in time_wrapper
+    r = func(*args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/triton_ops/autotune.py", line 157, in autotune_to_one_config
+    timings = {
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/triton_ops/autotune.py", line 158, in <dictcomp>
+    launcher: self.bench(launcher, *cloned_args, **kwargs)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/_inductor/triton_ops/autotune.py", line 139, in bench
+    return do_bench(kernel_call, rep=40, fast_flush=True)
+TypeError: do_bench() got an unexpected keyword argument 'fast_flush'

@@ -1,0 +1,42 @@
+step 0: train loss 10.9589, val loss 10.9578
+iter 0: loss 10.9319, time 10133.88ms
+iter 10: loss 10.4303, time 342.59ms
+iter 20: loss 9.7060, time 342.77ms
+iter 30: loss 9.9544, time 342.65ms
+iter 40: loss 9.3403, time 342.37ms
+Traceback (most recent call last):
+  File "train.py", line 281, in <module>
+    logits, loss = model(X, Y)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 181, in forward
+    x = block(x)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 112, in forward
+    x = x + self.mlp(self.ln_2(x))
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 96, in forward
+    x = new_gelu(x)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 24, in new_gelu
+    return 0.5 * x * (1.0 + torch.tanh(math.sqrt(2.0 / math.pi) * (x + 0.044715 * torch.pow(x, 3.0))))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "train.py", line 281, in <module>
+    logits, loss = model(X, Y)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 181, in forward
+    x = block(x)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 112, in forward
+    x = x + self.mlp(self.ln_2(x))
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 96, in forward
+    x = new_gelu(x)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 24, in new_gelu
+    return 0.5 * x * (1.0 + torch.tanh(math.sqrt(2.0 / math.pi) * (x + 0.044715 * torch.pow(x, 3.0))))
+KeyboardInterrupt

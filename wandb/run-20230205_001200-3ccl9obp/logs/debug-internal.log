@@ -1,0 +1,320 @@
+2023-02-05 00:12:00,055 INFO    StreamThr :12735 [internal.py:wandb_internal():87] W&B internal server running at pid: 12735, started at: 2023-02-05 00:12:00.055498
+2023-02-05 00:12:00,056 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status
+2023-02-05 00:12:00,057 INFO    WriterThread:12735 [datastore.py:open_for_write():85] open: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/run-3ccl9obp.wandb
+2023-02-05 00:12:00,058 DEBUG   SenderThread:12735 [sender.py:send():334] send: header
+2023-02-05 00:12:00,102 DEBUG   SenderThread:12735 [sender.py:send():334] send: run
+2023-02-05 00:12:00,558 INFO    SenderThread:12735 [dir_watcher.py:__init__():216] watching files in: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files
+2023-02-05 00:12:00,558 INFO    SenderThread:12735 [sender.py:_start_run_threads():1065] run started: 3ccl9obp with start time 1675566720.055093
+2023-02-05 00:12:00,558 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: summary_record
+2023-02-05 00:12:00,559 INFO    SenderThread:12735 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-05 00:12:00,559 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: check_version
+2023-02-05 00:12:00,560 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: check_version
+2023-02-05 00:12:00,655 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: run_start
+2023-02-05 00:12:00,660 DEBUG   HandlerThread:12735 [system_info.py:__init__():31] System info init
+2023-02-05 00:12:00,660 DEBUG   HandlerThread:12735 [system_info.py:__init__():46] System info init done
+2023-02-05 00:12:00,660 INFO    HandlerThread:12735 [system_monitor.py:start():151] Starting system monitor
+2023-02-05 00:12:00,660 INFO    SystemMonitor:12735 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-02-05 00:12:00,661 INFO    SystemMonitor:12735 [interfaces.py:start():168] Started cpu
+2023-02-05 00:12:00,661 INFO    HandlerThread:12735 [system_monitor.py:probe():172] Collecting system info
+2023-02-05 00:12:00,661 INFO    SystemMonitor:12735 [interfaces.py:start():168] Started disk
+2023-02-05 00:12:00,661 INFO    SystemMonitor:12735 [interfaces.py:start():168] Started gpu
+2023-02-05 00:12:00,662 INFO    SystemMonitor:12735 [interfaces.py:start():168] Started memory
+2023-02-05 00:12:00,662 INFO    SystemMonitor:12735 [interfaces.py:start():168] Started network
+2023-02-05 00:12:00,667 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:00,700 DEBUG   HandlerThread:12735 [system_info.py:probe():195] Probing system
+2023-02-05 00:12:00,704 DEBUG   HandlerThread:12735 [system_info.py:_probe_git():180] Probing git
+2023-02-05 00:12:00,712 DEBUG   HandlerThread:12735 [system_info.py:_probe_git():188] Probing git done
+2023-02-05 00:12:00,712 DEBUG   HandlerThread:12735 [system_info.py:probe():241] Probing system done
+2023-02-05 00:12:00,713 DEBUG   HandlerThread:12735 [system_monitor.py:probe():181] {'os': 'Linux-5.15.0-46-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2023-02-05T03:12:00.700652', 'startedAt': '2023-02-05T03:12:00.051332', 'docker': None, 'cuda': None, 'args': ('config/train_alberto_gpt2.py', '--compile=True'), 'state': 'running', 'program': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/karpathy/nanoGPT.git', 'commit': '3fd4c0c5efb653a9e22d88803e13c51832e37a46'}, 'email': 'alberto@lcad.inf.ufes.br', 'root': '/home/lume/KARPATHY/nanoGPT', 'host': 'lume-h4', 'username': 'lume', 'executable': '/usr/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2579.2626250000003, 'min': 800.0, 'max': 4600.0}, 'cpu_freq_per_core': [{'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 4264.644, 'min': 800.0, 'max': 4600.0}, {'current': 2855.44, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 4267.22, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 3940.014, 'min': 800.0, 'max': 4600.0}, {'current': 3179.333, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}], 'disk': {'total': 1344.4707374572754, 'used': 736.5314903259277}, 'gpu': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'memory_total': 6442450944}], 'memory': {'total': 15.407585144042969}}
+2023-02-05 00:12:00,713 INFO    HandlerThread:12735 [system_monitor.py:probe():182] Finished collecting system info
+2023-02-05 00:12:00,713 INFO    HandlerThread:12735 [system_monitor.py:probe():185] Publishing system info
+2023-02-05 00:12:00,713 DEBUG   HandlerThread:12735 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-02-05 00:12:00,713 DEBUG   HandlerThread:12735 [system_info.py:_save_pip():67] Saving pip packages done
+2023-02-05 00:12:00,714 INFO    HandlerThread:12735 [system_monitor.py:probe():187] Finished publishing system info
+2023-02-05 00:12:00,717 DEBUG   SenderThread:12735 [sender.py:send():334] send: files
+2023-02-05 00:12:00,717 INFO    SenderThread:12735 [sender.py:_save_file():1319] saving file wandb-metadata.json with policy now
+2023-02-05 00:12:00,720 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: stop_status
+2023-02-05 00:12:00,721 DEBUG   SenderThread:12735 [sender.py:send():334] send: telemetry
+2023-02-05 00:12:00,721 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: stop_status
+2023-02-05 00:12:01,378 INFO    Thread-16 :12735 [upload_job.py:push():143] Uploaded file /tmp/tmp_6we19fywandb/yprdjfju-wandb-metadata.json
+2023-02-05 00:12:01,559 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_created():275] file/dir created: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/requirements.txt
+2023-02-05 00:12:01,559 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_created():275] file/dir created: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/wandb-summary.json
+2023-02-05 00:12:01,559 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_created():275] file/dir created: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/wandb-metadata.json
+2023-02-05 00:12:02,559 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_created():275] file/dir created: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:12:02,669 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:04,559 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:12:04,670 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:05,964 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:12:06,672 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:08,673 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:10,675 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:10,965 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:12:12,677 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:14,679 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:15,732 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:12:15,732 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:12:15,965 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:12:16,680 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:18,657 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-05 00:12:18,658 DEBUG   SenderThread:12735 [sender.py:send():334] send: history
+2023-02-05 00:12:18,659 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: summary_record
+2023-02-05 00:12:18,660 INFO    SenderThread:12735 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-05 00:12:18,682 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:19,562 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/wandb-summary.json
+2023-02-05 00:12:20,683 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:20,769 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:12:21,563 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:12:21,847 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:12:22,563 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:12:22,685 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:24,564 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:12:24,686 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:25,890 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:12:26,688 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:26,848 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:12:28,690 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:30,715 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:31,083 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:12:31,999 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:12:32,565 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/config.yaml
+2023-02-05 00:12:32,566 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:12:32,716 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:34,718 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:35,566 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:12:36,083 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:12:36,720 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:37,427 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:12:38,722 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:39,567 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:12:40,724 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:41,085 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:12:42,704 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:12:42,726 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:43,568 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:12:44,728 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:46,085 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:12:46,730 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:47,569 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:12:47,984 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:12:48,733 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:50,735 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:51,091 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:12:51,570 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:12:52,737 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:53,267 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:12:54,740 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:55,571 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:12:56,092 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:12:56,742 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:58,744 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:12:58,845 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:12:59,572 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:13:00,662 DEBUG   SystemMonitor:12735 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-02-05 00:13:00,663 DEBUG   SenderThread:12735 [sender.py:send():334] send: stats
+2023-02-05 00:13:00,773 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:01,099 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:13:02,775 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:03,572 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:13:04,138 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:13:04,778 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:06,138 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:13:06,780 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:08,783 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:09,423 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:13:09,574 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:13:10,786 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:11,139 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:13:12,788 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:13,575 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:13:14,710 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:13:14,790 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:16,141 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:13:16,793 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:17,576 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:13:18,795 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:20,292 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:13:20,798 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:21,142 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:13:21,577 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:13:22,801 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:24,803 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:25,578 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:13:25,585 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:13:26,143 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:13:26,806 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:28,807 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:29,579 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:13:30,664 DEBUG   SenderThread:12735 [sender.py:send():334] send: stats
+2023-02-05 00:13:30,664 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:13:30,848 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:31,144 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:13:32,850 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:33,580 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:13:34,851 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:36,174 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:13:36,174 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:13:36,853 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:38,855 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:39,581 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:13:40,856 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:41,175 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:13:41,775 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:13:42,857 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:43,582 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:13:44,859 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:46,175 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:13:46,860 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:47,076 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:13:47,584 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:13:48,862 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:50,863 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:51,176 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:13:51,585 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:13:52,377 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:13:52,865 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:54,868 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:55,586 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:13:56,177 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:13:56,869 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:57,683 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:13:58,871 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:13:59,587 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:14:00,664 DEBUG   SenderThread:12735 [sender.py:send():334] send: stats
+2023-02-05 00:14:00,900 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:14:01,182 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:14:02,902 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:14:03,296 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:14:04,905 ERROR   gpu       :12735 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-05 00:14:05,588 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:14:05,793 DEBUG   SenderThread:12735 [sender.py:send():334] send: exit
+2023-02-05 00:14:05,793 INFO    SenderThread:12735 [sender.py:send_exit():557] handling exit code: 255
+2023-02-05 00:14:05,793 INFO    SenderThread:12735 [sender.py:send_exit():559] handling runtime: 125
+2023-02-05 00:14:05,793 INFO    SenderThread:12735 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-05 00:14:05,793 INFO    SenderThread:12735 [sender.py:send_exit():565] send defer
+2023-02-05 00:14:05,794 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: defer
+2023-02-05 00:14:05,794 INFO    HandlerThread:12735 [handler.py:handle_request_defer():170] handle defer: 0
+2023-02-05 00:14:05,794 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: defer
+2023-02-05 00:14:05,794 INFO    SenderThread:12735 [sender.py:send_request_defer():581] handle sender defer: 0
+2023-02-05 00:14:05,794 INFO    SenderThread:12735 [sender.py:transition_state():585] send defer: 1
+2023-02-05 00:14:05,794 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: defer
+2023-02-05 00:14:05,794 INFO    HandlerThread:12735 [handler.py:handle_request_defer():170] handle defer: 1
+2023-02-05 00:14:05,794 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: defer
+2023-02-05 00:14:05,794 INFO    SenderThread:12735 [sender.py:send_request_defer():581] handle sender defer: 1
+2023-02-05 00:14:05,794 INFO    SenderThread:12735 [sender.py:transition_state():585] send defer: 2
+2023-02-05 00:14:05,794 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: defer
+2023-02-05 00:14:05,794 INFO    HandlerThread:12735 [handler.py:handle_request_defer():170] handle defer: 2
+2023-02-05 00:14:05,794 INFO    HandlerThread:12735 [system_monitor.py:finish():161] Stopping system monitor
+2023-02-05 00:14:05,794 DEBUG   SystemMonitor:12735 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-02-05 00:14:05,794 DEBUG   SystemMonitor:12735 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-02-05 00:14:05,795 INFO    HandlerThread:12735 [interfaces.py:finish():175] Joined cpu
+2023-02-05 00:14:05,795 INFO    HandlerThread:12735 [interfaces.py:finish():175] Joined disk
+2023-02-05 00:14:05,819 INFO    HandlerThread:12735 [interfaces.py:finish():175] Joined gpu
+2023-02-05 00:14:05,819 INFO    HandlerThread:12735 [interfaces.py:finish():175] Joined memory
+2023-02-05 00:14:05,819 INFO    HandlerThread:12735 [interfaces.py:finish():175] Joined network
+2023-02-05 00:14:05,820 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: defer
+2023-02-05 00:14:05,820 INFO    SenderThread:12735 [sender.py:send_request_defer():581] handle sender defer: 2
+2023-02-05 00:14:05,820 INFO    SenderThread:12735 [sender.py:transition_state():585] send defer: 3
+2023-02-05 00:14:05,820 DEBUG   SenderThread:12735 [sender.py:send():334] send: stats
+2023-02-05 00:14:05,820 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: defer
+2023-02-05 00:14:05,820 INFO    HandlerThread:12735 [handler.py:handle_request_defer():170] handle defer: 3
+2023-02-05 00:14:05,820 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: defer
+2023-02-05 00:14:05,820 INFO    SenderThread:12735 [sender.py:send_request_defer():581] handle sender defer: 3
+2023-02-05 00:14:05,820 INFO    SenderThread:12735 [sender.py:transition_state():585] send defer: 4
+2023-02-05 00:14:05,820 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: defer
+2023-02-05 00:14:05,820 INFO    HandlerThread:12735 [handler.py:handle_request_defer():170] handle defer: 4
+2023-02-05 00:14:05,821 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: defer
+2023-02-05 00:14:05,821 INFO    SenderThread:12735 [sender.py:send_request_defer():581] handle sender defer: 4
+2023-02-05 00:14:05,821 INFO    SenderThread:12735 [sender.py:transition_state():585] send defer: 5
+2023-02-05 00:14:05,821 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: defer
+2023-02-05 00:14:05,821 INFO    HandlerThread:12735 [handler.py:handle_request_defer():170] handle defer: 5
+2023-02-05 00:14:05,821 DEBUG   SenderThread:12735 [sender.py:send():334] send: summary
+2023-02-05 00:14:05,821 INFO    SenderThread:12735 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-05 00:14:05,821 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: defer
+2023-02-05 00:14:05,821 INFO    SenderThread:12735 [sender.py:send_request_defer():581] handle sender defer: 5
+2023-02-05 00:14:05,821 INFO    SenderThread:12735 [sender.py:transition_state():585] send defer: 6
+2023-02-05 00:14:05,821 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: defer
+2023-02-05 00:14:05,821 INFO    HandlerThread:12735 [handler.py:handle_request_defer():170] handle defer: 6
+2023-02-05 00:14:05,821 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: defer
+2023-02-05 00:14:05,821 INFO    SenderThread:12735 [sender.py:send_request_defer():581] handle sender defer: 6
+2023-02-05 00:14:05,822 INFO    SenderThread:12735 [sender.py:transition_state():585] send defer: 7
+2023-02-05 00:14:05,822 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:14:05,822 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: defer
+2023-02-05 00:14:05,822 INFO    HandlerThread:12735 [handler.py:handle_request_defer():170] handle defer: 7
+2023-02-05 00:14:05,822 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: defer
+2023-02-05 00:14:05,822 INFO    SenderThread:12735 [sender.py:send_request_defer():581] handle sender defer: 7
+2023-02-05 00:14:06,588 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/wandb-summary.json
+2023-02-05 00:14:06,793 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-05 00:14:08,589 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:14:08,766 INFO    SenderThread:12735 [sender.py:transition_state():585] send defer: 8
+2023-02-05 00:14:08,766 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: poll_exit
+2023-02-05 00:14:08,766 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: defer
+2023-02-05 00:14:08,766 INFO    HandlerThread:12735 [handler.py:handle_request_defer():170] handle defer: 8
+2023-02-05 00:14:08,767 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: defer
+2023-02-05 00:14:08,767 INFO    SenderThread:12735 [sender.py:send_request_defer():581] handle sender defer: 8
+2023-02-05 00:14:08,772 INFO    SenderThread:12735 [sender.py:transition_state():585] send defer: 9
+2023-02-05 00:14:08,772 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: defer
+2023-02-05 00:14:08,772 INFO    HandlerThread:12735 [handler.py:handle_request_defer():170] handle defer: 9
+2023-02-05 00:14:08,772 DEBUG   SenderThread:12735 [sender.py:send():334] send: artifact
+2023-02-05 00:14:09,589 INFO    Thread-13 :12735 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:14:09,958 INFO    Thread-19 :12735 [upload_job.py:push():98] Skipped uploading /home/lume/.local/share/wandb/artifacts/staging/tmp2zighq28
+2023-02-05 00:14:10,328 INFO    Thread-18 :12735 [upload_job.py:push():101] Uploaded file /home/lume/.local/share/wandb/artifacts/staging/tmpu2p24zxc
+2023-02-05 00:14:11,784 INFO    SenderThread:12735 [sender.py:send_artifact():1415] sent artifact job-https___github.com_karpathy_nanoGPT.git_train.py - {'id': 'QXJ0aWZhY3Q6MzU0OTQ3MDE1', 'digest': '7c09ad8a6f25c361ee39f8af0ba0df76', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjUxMjk1MDc2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MzU0OTIyNTUw', 'versionIndex': 7}}, 'version': 'latest'}
+2023-02-05 00:14:11,785 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: defer
+2023-02-05 00:14:11,785 INFO    SenderThread:12735 [sender.py:send_request_defer():581] handle sender defer: 9
+2023-02-05 00:14:11,785 INFO    SenderThread:12735 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-02-05 00:14:11,794 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-05 00:14:12,590 INFO    SenderThread:12735 [dir_watcher.py:finish():392] scan: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files
+2023-02-05 00:14:12,590 INFO    SenderThread:12735 [dir_watcher.py:finish():406] scan save: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/requirements.txt requirements.txt
+2023-02-05 00:14:12,590 INFO    SenderThread:12735 [dir_watcher.py:finish():406] scan save: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/wandb-metadata.json wandb-metadata.json
+2023-02-05 00:14:12,590 INFO    SenderThread:12735 [dir_watcher.py:finish():406] scan save: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/wandb-summary.json wandb-summary.json
+2023-02-05 00:14:12,590 INFO    SenderThread:12735 [dir_watcher.py:finish():406] scan save: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log output.log
+2023-02-05 00:14:12,590 INFO    SenderThread:12735 [dir_watcher.py:finish():406] scan save: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/config.yaml config.yaml
+2023-02-05 00:14:12,591 INFO    SenderThread:12735 [sender.py:transition_state():585] send defer: 10
+2023-02-05 00:14:12,592 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: defer
+2023-02-05 00:14:12,594 INFO    HandlerThread:12735 [handler.py:handle_request_defer():170] handle defer: 10
+2023-02-05 00:14:12,596 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: defer
+2023-02-05 00:14:12,596 INFO    SenderThread:12735 [sender.py:send_request_defer():581] handle sender defer: 10
+2023-02-05 00:14:12,596 INFO    SenderThread:12735 [file_pusher.py:finish():160] shutting down file pusher
+2023-02-05 00:14:13,213 INFO    Thread-23 :12735 [upload_job.py:push():143] Uploaded file /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/config.yaml
+2023-02-05 00:14:13,218 INFO    Thread-20 :12735 [upload_job.py:push():143] Uploaded file /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/requirements.txt
+2023-02-05 00:14:13,226 INFO    Thread-21 :12735 [upload_job.py:push():143] Uploaded file /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/wandb-summary.json
+2023-02-05 00:14:13,232 INFO    Thread-22 :12735 [upload_job.py:push():143] Uploaded file /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/files/output.log
+2023-02-05 00:14:13,432 INFO    Thread-12 :12735 [sender.py:transition_state():585] send defer: 11
+2023-02-05 00:14:13,433 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: defer
+2023-02-05 00:14:13,433 INFO    HandlerThread:12735 [handler.py:handle_request_defer():170] handle defer: 11
+2023-02-05 00:14:13,433 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: defer
+2023-02-05 00:14:13,433 INFO    SenderThread:12735 [sender.py:send_request_defer():581] handle sender defer: 11
+2023-02-05 00:14:13,433 INFO    SenderThread:12735 [file_pusher.py:join():165] waiting for file pusher
+2023-02-05 00:14:13,433 INFO    SenderThread:12735 [sender.py:transition_state():585] send defer: 12
+2023-02-05 00:14:13,433 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: defer
+2023-02-05 00:14:13,433 INFO    HandlerThread:12735 [handler.py:handle_request_defer():170] handle defer: 12
+2023-02-05 00:14:13,433 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: defer
+2023-02-05 00:14:13,433 INFO    SenderThread:12735 [sender.py:send_request_defer():581] handle sender defer: 12
+2023-02-05 00:14:13,957 INFO    SenderThread:12735 [sender.py:transition_state():585] send defer: 13
+2023-02-05 00:14:13,958 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: defer
+2023-02-05 00:14:13,958 INFO    HandlerThread:12735 [handler.py:handle_request_defer():170] handle defer: 13
+2023-02-05 00:14:13,958 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: status_report
+2023-02-05 00:14:13,958 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: defer
+2023-02-05 00:14:13,958 INFO    SenderThread:12735 [sender.py:send_request_defer():581] handle sender defer: 13
+2023-02-05 00:14:13,958 INFO    SenderThread:12735 [sender.py:transition_state():585] send defer: 14
+2023-02-05 00:14:13,959 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: defer
+2023-02-05 00:14:13,959 INFO    HandlerThread:12735 [handler.py:handle_request_defer():170] handle defer: 14
+2023-02-05 00:14:13,959 DEBUG   SenderThread:12735 [sender.py:send():334] send: final
+2023-02-05 00:14:13,959 DEBUG   SenderThread:12735 [sender.py:send():334] send: footer
+2023-02-05 00:14:13,959 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: defer
+2023-02-05 00:14:13,959 INFO    SenderThread:12735 [sender.py:send_request_defer():581] handle sender defer: 14
+2023-02-05 00:14:13,959 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-05 00:14:13,960 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: poll_exit
+2023-02-05 00:14:13,960 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: server_info
+2023-02-05 00:14:13,960 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: get_summary
+2023-02-05 00:14:13,960 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: sampled_history
+2023-02-05 00:14:13,961 DEBUG   SenderThread:12735 [sender.py:send_request():361] send_request: server_info
+2023-02-05 00:14:14,147 INFO    MainThread:12735 [wandb_run.py:_footer_history_summary_info():3427] rendering history
+2023-02-05 00:14:14,147 INFO    MainThread:12735 [wandb_run.py:_footer_history_summary_info():3459] rendering summary
+2023-02-05 00:14:14,147 INFO    MainThread:12735 [wandb_run.py:_footer_sync_info():3383] logging synced files
+2023-02-05 00:14:14,148 DEBUG   HandlerThread:12735 [handler.py:handle_request():144] handle_request: shutdown
+2023-02-05 00:14:14,148 INFO    HandlerThread:12735 [handler.py:finish():841] shutting down handler
+2023-02-05 00:14:14,960 INFO    WriterThread:12735 [datastore.py:close():299] close: /home/lume/KARPATHY/nanoGPT/wandb/run-20230205_001200-3ccl9obp/run-3ccl9obp.wandb
+2023-02-05 00:14:15,147 INFO    SenderThread:12735 [sender.py:finish():1491] shutting down sender
+2023-02-05 00:14:15,147 INFO    SenderThread:12735 [file_pusher.py:finish():160] shutting down file pusher
+2023-02-05 00:14:15,147 INFO    SenderThread:12735 [file_pusher.py:join():165] waiting for file pusher

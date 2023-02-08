@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "train.py", line 245, in <module>
+    losses = estimate_loss()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "train.py", line 205, in estimate_loss
+    logits, loss = model(X, Y)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 187, in forward
+    loss = F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1), ignore_index=-1)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/functional.py", line 3026, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.30 GiB (GPU 0; 5.81 GiB total capacity; 3.13 GiB already allocated; 1.30 GiB free; 3.58 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "train.py", line 245, in <module>
+    losses = estimate_loss()
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "train.py", line 205, in estimate_loss
+    logits, loss = model(X, Y)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lume/KARPATHY/nanoGPT/model.py", line 187, in forward
+    loss = F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1), ignore_index=-1)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/functional.py", line 3026, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.30 GiB (GPU 0; 5.81 GiB total capacity; 3.13 GiB already allocated; 1.30 GiB free; 3.58 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

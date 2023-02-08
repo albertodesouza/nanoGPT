@@ -1,0 +1,52 @@
+
+step 0: train loss 11.0203, val loss 11.0147
+iter 0: loss 11.0055, time 19823.63ms
+iter 10: loss 9.9733, time 451.87ms
+iter 20: loss 9.4787, time 451.21ms
+iter 30: loss 9.2342, time 451.72ms
+iter 40: loss 9.0863, time 452.50ms
+iter 50: loss 8.2044, time 452.30ms
+iter 60: loss 8.2954, time 454.59ms
+iter 70: loss 7.7345, time 454.91ms
+iter 80: loss 7.8050, time 454.23ms
+iter 90: loss 7.4729, time 452.46ms
+iter 100: loss 6.9682, time 454.01ms
+iter 110: loss 7.1626, time 454.89ms
+iter 120: loss 7.0022, time 453.86ms
+iter 130: loss 7.3028, time 456.62ms
+iter 140: loss 7.1422, time 454.62ms
+iter 150: loss 7.6472, time 456.20ms
+iter 160: loss 7.1156, time 456.81ms
+iter 170: loss 6.7252, time 455.51ms
+iter 180: loss 6.9258, time 455.61ms
+iter 190: loss 7.0132, time 456.04ms
+iter 200: loss 6.7038, time 455.88ms
+iter 210: loss 7.1984, time 456.52ms
+iter 220: loss 6.9044, time 456.03ms
+iter 230: loss 6.3202, time 455.67ms
+iter 240: loss 6.1498, time 455.85ms
+iter 250: loss 6.7918, time 456.33ms
+iter 260: loss 6.5702, time 457.01ms
+iter 270: loss 5.8325, time 456.08ms
+iter 280: loss 6.9554, time 455.82ms
+iter 290: loss 6.6250, time 457.12ms
+iter 300: loss 6.8734, time 455.97ms
+iter 310: loss 6.8185, time 457.19ms
+iter 320: loss 6.8170, time 455.36ms
+iter 330: loss 5.9268, time 457.07ms
+iter 340: loss 6.4030, time 457.86ms
+iter 350: loss 6.4562, time 456.74ms
+iter 360: loss 6.6027, time 457.01ms
+iter 370: loss 6.2053, time 458.05ms
+Traceback (most recent call last):
+  File "train.py", line 289, in <module>
+    torch.nn.utils.clip_grad_norm_(model.parameters(), grad_clip)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/utils/clip_grad.py", line 77, in clip_grad_norm_
+    torch._foreach_mul_(grads, clip_coef_clamped.to(device))  # type: ignore[call-overload]
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "train.py", line 289, in <module>
+    torch.nn.utils.clip_grad_norm_(model.parameters(), grad_clip)
+  File "/home/lume/.local/lib/python3.8/site-packages/torch/nn/utils/clip_grad.py", line 77, in clip_grad_norm_
+    torch._foreach_mul_(grads, clip_coef_clamped.to(device))  # type: ignore[call-overload]
+KeyboardInterrupt
