@@ -1,0 +1,2 @@
+# nanoGPT
+GPT de estudo
