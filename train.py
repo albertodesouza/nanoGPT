@@ -308,7 +308,7 @@ while True:
     t0 = t1
     if iter_num % log_interval == 0 and master_process:
         lossf = loss.item() # loss as float. TODO note CPU-GPU sync! profile, make sure not too slow
-        print(f"iter {iter_num}: loss {lossf:.4f}, num_train_tokens {num_train_tokens:,}, trained_epochs {trained_epochs:.3f}, time {dt*1000:.2f}ms")
+        print(f"iter {iter_num}: loss {lossf:.4f}, num_train_tokens {num_train_tokens:,}, trained_epochs {trained_epochs:.6f}, time {dt*1000:.2f}ms")
     iter_num += 1
 
     # termination conditions
