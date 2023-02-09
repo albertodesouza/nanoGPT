@@ -230,6 +230,7 @@ if wandb_log and master_process:
 # training loop
 X, Y = get_batch('train') # fetch the very first batch
 t0 = time.time()
+total_time_running = 0.0
 num_train_tokens = len(train_data)
 num_train_batches = num_train_tokens / batch_size
 num_train_batches_consumed = 1
@@ -305,10 +306,11 @@ while True:
     # timing and logging
     t1 = time.time()
     dt = t1 - t0
+    total_time_running = total_time_running + dt
     t0 = t1
     if iter_num % log_interval == 0 and master_process:
         lossf = loss.item() # loss as float. TODO note CPU-GPU sync! profile, make sure not too slow
-        print(f"iter {iter_num}: loss {lossf:.4f}, num_train_tokens {num_train_tokens:,}, trained_epochs {trained_epochs:.9f}, time {dt*1000:.2f}ms")
+        print(f"iter {iter_num}: loss {lossf:.4f}, num_train_tokens {num_train_tokens:,}, trained_epochs {trained_epochs:.9f}, time {dt*1000:.2f}ms, remaining_time_for_epoch {((1000 * 1000) / 86400.0) * (total_time_running / trained_epochs)} days")
     iter_num += 1
 
     # termination conditions
