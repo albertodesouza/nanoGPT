@@ -63,7 +63,7 @@ beta2 = 0.95
 grad_clip = 1.0 # clip gradients at this value, or disable if == 0.0
 # learning rate decay settings
 decay_lr = True # whether to decay the learning rate
-warmup_iters = 2000 # how many steps to warm up for
+warmup_iters = 2000 # how many steps to warm up forsche
 lr_decay_iters = 600000 # should be ~= max_iters per Chinchilla
 min_lr = 6e-5 # minimum learning rate, should be ~= learning_rate/10 per Chinchilla
 # DDP settings
@@ -230,6 +230,12 @@ if wandb_log and master_process:
 # training loop
 X, Y = get_batch('train') # fetch the very first batch
 t0 = time.time()
+num_train_tokens = len(train_data)
+num_train_batches = num_train_tokens / batch_size
+num_train_batches_consumed = 1
+trained_epochs = num_train_batches_consumed / num_train_batches
+print(f"\nnum_train_tokens {num_train_tokens:,}, train_data {train_data.shape}, batch_size {batch_size}, num_train_batches {num_train_batches:,}, input X {X.shape}, output Y {Y.shape}")
+
 while True:
 
     # determine the learning rate for this iteration
@@ -281,6 +287,9 @@ while True:
             logits, loss = model(X, Y)
         # immediately async prefetch next batch while model is doing the forward pass on the GPU
         X, Y = get_batch('train')
+        num_train_batches_consumed = num_train_batches_consumed + 1
+        trained_epochs = num_train_batches_consumed / num_train_batches
+
         # backward pass, with gradient scaling if training in fp16
         scaler.scale(loss).backward()
     # clip the gradient
@@ -299,7 +308,7 @@ while True:
     t0 = t1
     if iter_num % log_interval == 0 and master_process:
         lossf = loss.item() # loss as float. TODO note CPU-GPU sync! profile, make sure not too slow
-        print(f"iter {iter_num}: loss {lossf:.4f}, time {dt*1000:.2f}ms")
+        print(f"iter {iter_num}: loss {lossf:.4f}, num_train_tokens {num_train_tokens:,}, trained_epochs {trained_epochs:.3f}, time {dt*1000:.2f}ms")
     iter_num += 1
 
     # termination conditions
