@@ -232,7 +232,7 @@ X, Y = get_batch('train') # fetch the very first batch
 t0 = time.time()
 total_time_running = 0.0
 num_train_tokens = len(train_data)
-num_train_batches = num_train_tokens / batch_size
+num_train_batches = num_train_tokens / (batch_size * block_size)
 num_train_batches_consumed = 1
 trained_epochs = num_train_batches_consumed / num_train_batches
 print(f"\nnum_train_tokens {num_train_tokens:,}, train_data {train_data.shape}, batch_size {batch_size}, num_train_batches {num_train_batches:,}, input X {X.shape}, output Y {Y.shape}")
@@ -310,7 +310,7 @@ while True:
     t0 = t1
     if iter_num % log_interval == 0 and master_process:
         lossf = loss.item() # loss as float. TODO note CPU-GPU sync! profile, make sure not too slow
-        print(f"iter {iter_num}: loss {lossf:.4f}, num_train_tokens {num_train_tokens:,}, trained_epochs {trained_epochs:.9f}, time {dt*1000:.2f}ms, remaining_time_for_epoch {((1000 * 1000) / 86400.0) * (total_time_running / trained_epochs)} days")
+        print(f"iter {iter_num}: loss {lossf:.4f}, num_train_tokens {num_train_tokens:,}, trained_epochs {trained_epochs:.9f}, time {dt*1000:.2f}ms, remaining_time_for_epoch {((1000 * 1000) / 86400.0) * (total_time_running / trained_epochs):.2f} days, remaining_time_for_epoch {((1000 * 1000) / (86400.0 * 365.0)) * (total_time_running / trained_epochs):.2f} years")
     iter_num += 1
 
     # termination conditions
