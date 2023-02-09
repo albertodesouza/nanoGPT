@@ -257,6 +257,7 @@ while True:
                 "train/loss": losses['train'],
                 "val/loss": losses['val'],
                 "lr": lr,
+                "remaining_time_for_epoch": (1.0 / 86400.0) * ((total_time_running / trained_epochs) - total_time_running),
             })
         if losses['val'] < best_val_loss or always_save_checkpoint:
             best_val_loss = losses['val']
@@ -310,7 +311,7 @@ while True:
     t0 = t1
     if iter_num % log_interval == 0 and master_process:
         lossf = loss.item() # loss as float. TODO note CPU-GPU sync! profile, make sure not too slow
-        print(f"iter {iter_num}: loss {lossf:.4f}, num_train_tokens {num_train_tokens:,}, trained_epochs {trained_epochs:.9f}, time {dt*1000:.2f}ms, remaining_time_for_epoch {(total_time_running / trained_epochs):.2f} s, remaining_time_for_epoch {(1.0 / 86400.0) * (total_time_running / trained_epochs):.2f} days")
+        print(f"iter {iter_num}: loss {lossf:.4f}, num_train_tokens {num_train_tokens:,}, trained_epochs {trained_epochs:.9f}, time {dt*1000:.2f}ms, ~remaining_time_for_epoch {((total_time_running / trained_epochs) - total_time_running):.2f} s, ~remaining_time_for_epoch {(1.0 / 86400.0) * ((total_time_running / trained_epochs) - total_time_running):.2f} days")
     iter_num += 1
 
     # termination conditions
